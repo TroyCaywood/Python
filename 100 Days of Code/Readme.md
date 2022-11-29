@@ -3,4 +3,4 @@
 
 #### *What is the purpose of this repository?*
 
-The purpose of this repository is to keep myself motivated by providing a place to store completed projects. So I can look back later and see my progress.
+The purpose of this repository is to keep myself motivated by providing a place to store completed projects, as well as notes. So I can look back later and see my progress.
