@@ -92,3 +92,6 @@ best_pie = "pumpkin"
 - Numbers can be in the variable name, but they **cannot** be the first character in the variable name. 
 - It is best practice not to use privledged names of functions such such as print or input for variable names.
 - Pay attention to your variable names when referencing them in functions etc. Spelling or casing errors will genearate a NameError if the variable is not defined by that spelling or casing.
+
+---
+***Day 1 Project*** - [Band Generator](https://replit.com/@TroyCaywood/band-name-generator-start?v=1) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-1/band_generator.py) Do **NOT** click if you plan on doing the project yourself.
