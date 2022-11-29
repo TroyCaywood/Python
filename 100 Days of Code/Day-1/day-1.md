@@ -58,3 +58,37 @@ print("Hello " + input("What is your name?") + "!")
 Hello Bob!
 ```
 - The length of a string can be found using len()
+
+---
+
+<p align=center><b>Variables</b></p>
+
+- A Python variable is a symbolic name that is a reference or pointer to an object. Once an object is assigned to a variable, you can refer to the object by that name. But the data itself is still contained within the object.
+
+```python
+name = "Troy"
+print(name)
+```
+```
+Troy
+```
+- A variable can be changed later in your code. It will not always hold the same value
+```python
+name = "Troy"
+print(name)
+
+name = "Bob"
+print(name)
+```
+```
+Troy
+Bob
+```
+- Variables can be named almost anything you want, but make sure they are easily understandable later. Avoid using ambiguous variable names. 
+- You **cannot** have space in variable name, but underscores are ok. EX:
+```python
+best_pie = "pumpkin"
+```
+- Numbers can be in the variable name, but they **cannot** be the first character in the variable name. 
+- It is best practice not to use privledged names of functions such such as print or input for variable names.
+- Pay attention to your variable names when referencing them in functions etc. Spelling or casing errors will genearate a NameError if the variable is not defined by that spelling or casing.
