@@ -1,4 +1,4 @@
-## Day One
+## Day One - Strings, Input, and Variables
 
 ---
 
