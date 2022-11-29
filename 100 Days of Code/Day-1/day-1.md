@@ -1,8 +1,9 @@
 ## Day One
 
-##### *What was today about?*
+---
 
-Introduction to class
+<p align=center><b>Strings</b></p>
+
 
 - To print text to console.
 ```python
@@ -30,6 +31,13 @@ Hello World! It's me!
 ```
 
 - **Syntax highlighting** is color coding for different parts of code in an IDE. Can be useful when troubleshooting errors (IE string is white instead of red, missing quotation marks)
+
+---
+
+<p align=center><b>Input</b></p>
+
+
+
 - To prompt a user for input use the input() function.
 ```python
 input("What is your name?")
