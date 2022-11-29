@@ -9,9 +9,15 @@
 ```python
 print("Hello world!")
 ```
+```
+Hello World!
+```
 - Plain text is called a string in programming. Text within print parenthesis **must** be in quotation marks or single quotes. Best practice to use double quotes, but use single quotes if there are more quotes in the string EX: 
 ```python
  print("This is how you print things print('Hello world!'). Isn't that neat?")
+ ```
+ ```
+ This is how you print things print('Hello world!'). Isn't that neat?
  ```
 - \n within a string prints anything after the \n to a new line
 ```python
