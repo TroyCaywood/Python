@@ -39,3 +39,14 @@ o
 
 **Boolean**
 - A data type with only two possible values. True or False. The first character is always capitalized on True or False. Used to evaluate if an expression is True or False.
+
+**Type Errors**
+- Strings and integers cannot be added together. If you aren't sure what datatype your function is outputting you can use the type() function to check.
+```python
+num_char = len(input("What is your name?"))
+print(type(num_char))
+```
+Pretend you entered youre name when prompted. The computer would then store the number of charcters in your name in the num_char variable as an integer. Type would return:
+```
+<class 'int'>
+```
