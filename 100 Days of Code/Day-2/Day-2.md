@@ -41,12 +41,29 @@ o
 - A data type with only two possible values. True or False. The first character is always capitalized on True or False. Used to evaluate if an expression is True or False.
 
 **Type Errors**
-- Strings and integers cannot be added together. If you aren't sure what datatype your function is outputting you can use the type() function to check.
+- Strings and integers cannot be added together.
 ```python
 num_char = len(input("What is your name?"))
+print("Your name has " + num_char + " characters.")
+```
+This code would return a type error since len is counting the number of charcters in the name and returning an integer and then you're trying to combine an integer with a string.
+- If you aren't sure what datatype your function is outputting you can use the type() function to check.
+```python
+num_char = len(input("What is your name?"))
+
 print(type(num_char))
 ```
-Pretend you entered youre name when prompted. The computer would then store the number of charcters in your name in the num_char variable as an integer. Type would return:
+Pretend you entered your name when prompted. The computer would then store the number of charcters in your name in the num_char variable as an integer. Type would return:
 ```
 <class 'int'>
+```
+- To fix the previous example, we need to convert the integer into a string using str()
+```python
+num_char = len(input("What is your name?"))
+new_num_char = str(num_char)
+print("Your name has " + new_num_char + " characters.")
+```
+Pretend we entered the name Troy. The code will now count the number of characters as 4 and then convert it to the string "4" in the new_num_char variable.
+```
+Your name has 4 characters.
 ```
