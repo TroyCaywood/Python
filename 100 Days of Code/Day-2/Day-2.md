@@ -63,7 +63,9 @@ num_char = len(input("What is your name?"))
 new_num_char = str(num_char)
 print("Your name has " + new_num_char + " characters.")
 ```
-Pretend we entered the name Troy. The code will now count the number of characters as 4 and then convert it to the string "4" in the new_num_char variable.
+Pretend we entered the name Troy. The code will now count the number of characters as 4 and then convert it to the string "4" and store it in the new_num_char variable.
 ```
 Your name has 4 characters.
 ```
+- Other datatypes can be converted as well.
+- float() is used to convert whole numbers into floats.
