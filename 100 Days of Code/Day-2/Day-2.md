@@ -11,7 +11,7 @@
 "Hello, this is a string."
 ```
 **Subscripting**
-- Selecting a character in a string using [] with the number of the character in the string. The first character in a string is always 0.
+- Selecting a character in a string using [] with the number of the character in the string. The first character in a string is always 0. Don't forget, a space in a string counts as a character.
 
 ```python
 print("Hello"[0])
