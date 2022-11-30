@@ -40,6 +40,8 @@ o
 **Boolean**
 - A data type with only two possible values. True or False. The first character is always capitalized on True or False. Used to evaluate if an expression is True or False.
 
+---
+
 **Type Errors**
 - Strings and integers cannot be added together.
 ```python
@@ -69,3 +71,52 @@ Your name has 4 characters.
 ```
 - Other datatypes can be converted as well.
 - float() is used to convert whole numbers into floats.
+
+---
+
+**Mathematical Operations**
+- You can perform mathematical operations on integers in python ( strings can be "added" together using +)
+- "+" for addition  4 + 3
+- "-" for subtraction 4 - 3
+- "*" for multiplication 4 * 3
+- "/" for division 4 / 3 
+  + Note: in division the numbers returned are always returned as a float rather than an integer.
+- "**" for exponents (to the power of) 4 ** 3
+- When working with mathematical expressions in python, remember PEMDAS (**P**lease **E**xcuse **M**y **D**ear **A**unt **S**ally) for the order of operations
+  + **P**arentheses
+  + **E**xponents
+  + **M**ultiplication
+  + **D**ivision
+  + **A**ddition
+  + **S**ubtraction
+- When you have multiplication and division in the same calculation, they are of equal importance but whichever is furthest to the left is executed first. Same for addition and subtraction in the same calculation.
+- To round an calculation use the round function. round(2.66666, 2) the second number is the number of places that you want to round to. This example would round to 2.67.
+- If you want a division equation to round to the nearest whole number use floor division by using two "//"  8 // 3 would round to 2.
+- When a number or equation is stored in a variable, you can modify the stored equation or number easily using variable += 1 in this case it would add one to the stored variable.
+```python
+score = 4
+score += 1
+print(score)
+```
+When score is printed, it would now be 5
+```
+5
+````
+ - Other mathematical operations can be performed on a variable the same way. "-=" "*=" "/=" etc.
+
+---
+
+- An F-string is used if you want to combine strings with other datatypes such as integers or floats without having to convert each type to a string first. This is accomplished by putting an f before the string and then putting the variables in {} within the string. EX:
+
+```python
+score = 0
+height = 1.8
+isWinning = True
+
+#f-string
+print(f"Your score is {score}, your height is {height}, you are winning is {isWinning}")
+```
+This would print
+```
+Your score is 0, your height is 1.8, you are winning is True
+```
