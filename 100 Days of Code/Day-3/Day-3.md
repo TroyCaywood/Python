@@ -59,7 +59,7 @@ else:
 **Multiple If Statemnets in Succession**
 - If statements can be used in succession. Compared to elif, multiple If statements evalute if the statement is True regardless of wether the prior If statement was True or not.
 
-In this example, we create the variable bill and set it's value to 0 before entering our if statement. Then, the if statement evaluates their age and sets the value of bill according to their age. We then create the wants_photo input within the original if statement and add another if statement for Y that adds 3 to the value of bill and then prints the bill total.
+In this example, we create the variable bill and set it's value to 0 before entering our if statement. Then, the if statement evaluates their age and sets the value of bill according to their age. We then create the wants_photo input within the original if statement and add another if statement for Y that adds 3 to the value of bill and then prints the bill total. Note that the indentation of the if statements matters as far as when they run during the program.
 ```python
 print("Welcome to the rollercoaster!")
 
