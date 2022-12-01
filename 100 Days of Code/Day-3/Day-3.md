@@ -55,6 +55,40 @@ if height >= 120:
 else:
   print("Sorry, you have to grow taller before you can ride.")
 ```
+
+**Multiple If Statemnets in Succession**
+- If statements can be used in succession. Compared to elif, multiple If statements evalute if the statement is True regardless of wether the prior If statement was True or not.
+
+In this example, we create the variable bill and set it's value to 0 before entering our if statement. Then, the if statement evaluates their age and sets the value of bill according to their age. We then create the wants_photo input within the original if statement and add another if statement for Y that adds 3 to the value of bill and then prints the bill total.
+```python
+print("Welcome to the rollercoaster!")
+
+height = int(input("What is your height in cm?"))
+bill = 0
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age?"))
+  if age < 12:
+    bill = 5
+    print("Child tickets are $5.")
+  elif age <= 18:
+    bill = 7
+    print("Youth tickets are $7.")
+  else:
+    bill = 12
+    print("Adult tickets are $12.")
+  
+  wants_photo = input("Do you want a photo taken? Y or N. ")
+  if wants_photo == "Y":
+   #Add $3 to bill
+   bill += 3
+ 
+  print(f"Your final bill is {bill}")
+   
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+```
   
 **Comparison Operators**
 - There are different comparison operators that can be used to compare values in python
