@@ -21,17 +21,39 @@ In this example if the height entered is greater than 120 it will printer "You c
 ```python
 print("Welcome to the rollercoaster!")
 
-height = (int(input("What is your height in cm?"))
+height = int(input("What is your height in cm?"))
 
-if height is >= 120:
+if height >= 120:
   print("You can ride the rollercoaster!")
-  age=(int(input("What is your age?"))
+  age = int(input("What is your age?"))
   if age <= 18:
     print("Please pay $7.")
   else:
     print("Please pay $12.")
 else:
-  print("Sorry, you have to grow taller before you can ride."
+  print("Sorry, you have to grow taller before you can ride.")
+```
+**Elif**
+- Elif (else if) is used to check if multiple statements are true
+We have added several more elif statements to check in the rollercoaster example now. If the computer gets to any of the elif statements and they evaluate as True, it will continue on to print the string contained in that elif statement. If the elif statement is False, it will continue on to the next elif statement.
+```python
+print("Welcome to the rollercoaster!")
+
+height = int(input("What is your height in cm?"))
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age?"))
+  if age < 12:
+    print("Please pay $5.")
+  elif age <= 18:
+    print("Please pay $7.")
+  elif age == 22:
+    print("Congratulations, you're 22!")
+  else:
+    print("Please pay $12.")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
 ```
   
 **Comparison Operators**
