@@ -100,4 +100,71 @@ else:
   + "!=" Not equal to
 **Modulo**
 - The modulo operator is used to give the remainder of a division equation. EX 4 % 2 = 0  and 99 % 2 = 1
--
+
+**Logical Operators**
+- and - When using the and operator, both statements must be True for the line to evaluate as True. If just one condition evaluates as False, then the whole line is False.
+
+```python
+a = 12
+
+a > 10 and a < 13
+True
+
+a > 10 and a < 11
+False
+```
+
+- or - the "or" operator is used when you only need one statement to be True.
+
+```python
+a = 12
+
+a > 10 or a < 7
+True
+```
+
+- not - the "not" operator basically reverses a condition. If a condition is True it becomes False if a condition is False it becomes True
+
+```python
+a = 12
+
+not a > 15
+True
+```
+
+In this example we've modified the code we were previously using to add a midlife crisis detection for anyone between the ages of 45 and 55 using the "and" operator. They get to ride for free!
+```python
+
+print("Welcome to the rollercoaster!")
+
+height = int(input("What is your height in cm?"))
+bill = 0
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age?"))
+  if age < 12:
+    bill = 5
+    print("Child tickets are $5.")
+  elif age <= 18:
+    bill = 7
+    print("Youth tickets are $7.")
+# Here is the and condition we've created for the midlife crisis age range.
+  elif age >= 45 and age <= 55:
+    bill = 0
+    print(f"You're having a midlife crisis. Your tickets are ${bill}. Good Luck!")  
+  else:
+    bill = 12
+    print("Adult tickets are $12.")
+  
+  wants_photo = input("Do you want a photo taken? Y or N. ")
+  if wants_photo == "Y":
+   #Add $3 to bill
+   bill += 3
+ 
+  print(f"Your final bill is {bill}")
+   
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+```
+
