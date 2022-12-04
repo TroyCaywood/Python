@@ -168,3 +168,6 @@ else:
   print("Sorry, you have to grow taller before you can ride.")
 ```
 
+---
+
+***Day 3 Challenge*** - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-3/Treasure_hunt.py)
