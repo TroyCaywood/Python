@@ -33,4 +33,19 @@ randomFloat = random.random() * 5
 
 print(randomFloat)
 ```
+You could use this to do something like make a random heads or tail generator
+```python
+import random
 
+coin = random.randint(0, 1)
+
+if coin == 1:
+    print("Heads")
+else:
+    print("Tails")
+```
+
+---
+
+**Lists**
+-
