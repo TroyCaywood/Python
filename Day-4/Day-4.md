@@ -73,3 +73,25 @@ This would add "Troylad" as the last index in the list of states_of_america
 states_of_america.append("Troyland")
 ```
 - There are [many](https://docs.python.org/3/tutorial/datastructures.html) other ways you can manipulate lists
+
+```python
+# Import the random module here
+
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# import random module
+import random
+
+# Count how long the length of list is
+name_length = len(names)
+
+# Get a random index value
+random_index = random.randint(0, int(name_length))
+
+# Use random index number to pull that name
+random_name = names[random_index]
+
+# Print the result
+print(f"{random_name} is going to buy the meal today!")
+```
