@@ -101,7 +101,7 @@ else:
 **Modulo**
 - The modulo operator is used to give the remainder of a division equation. EX 4 % 2 = 0  and 99 % 2 = 1
 
-**Logical Operators**
+## Logical Operators
 - and - When using the and operator, both statements must be True for the line to evaluate as True. If just one condition evaluates as False, then the whole line is False.
 
 ```python
