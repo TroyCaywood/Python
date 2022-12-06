@@ -111,3 +111,21 @@ print(healthy_stuff)
 
 [["Pears", "Apples", "Kiwi", "Tomatoes"], ["Broccoli", "Spinach", "Kale", "Potatoes"]]
 ```
+In this examnple. When you type in 23, for example, it would put the X on the bottom middle square. This is because we are passing values into a nested list. First we are selecting index 2 (because we are subtracting 1 from the entered value) which gives us list "row3", then we are selecting index 1 (because we are subtracting 1 from the entered value again) in the row 3 list and setting that index to the string "X".
+```python
+
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+map[vertical - 1][horizontal - 1] = "X"
+
+print(f"{row1}\n{row2}\n{row3}")
+~~~
