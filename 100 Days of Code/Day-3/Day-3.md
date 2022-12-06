@@ -1,8 +1,8 @@
-## Day 3 - Conditional Statements, Logical Operators, Code Blocks and Scope
+# Day 3 - Conditional Statements, Logical Operators, Code Blocks and Scope
 
 ---
 
-<p align=center><b>Conditional Statements</b></p>
+## Conditional Statements
 
 **If/Else Statements**
 - An If/Else statement runs a block of code if a statement is True, if the statement is False it runs the else block of code.
@@ -90,7 +90,7 @@ else:
   print("Sorry, you have to grow taller before you can ride.")
 ```
   
-**Comparison Operators**
+## Comparison Operators
 - There are different comparison operators that can be used to compare values in python
   + ">" Greater than
   + "<" Less than
