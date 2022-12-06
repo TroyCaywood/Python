@@ -40,7 +40,7 @@ Hello World! It's me!
 
 ---
 
-<p align=center><b>Input</b></p>
+## Input
 
 
 
@@ -61,7 +61,7 @@ Hello Bob!
 
 ---
 
-<p align=center><b>Variables</b></p>
+## Variables
 
 - A Python variable is a symbolic name that is a reference or pointer to an object. Once an object is assigned to a variable, you can refer to the object by that name. But the data itself is still contained within the object.
 
