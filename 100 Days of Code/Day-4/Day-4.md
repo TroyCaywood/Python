@@ -129,3 +129,7 @@ map[vertical - 1][horizontal - 1] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
 ```
+
+---
+
+## Day 4 Challenge - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-4/RPC.py) Don't click if you plan on doing the challenge first.
