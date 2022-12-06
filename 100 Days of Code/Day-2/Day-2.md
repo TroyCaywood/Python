@@ -1,8 +1,8 @@
-## Day Two - Data Types and Manipulating Strings
+# Day Two - Data Types and Manipulating Strings
 
 ---
 
-<p align = center><b>Data Types</b></p>
+## Data Types
 
 **Strings**
 - Strings are a set of characters surrounded by quotation marks.
@@ -74,7 +74,7 @@ Your name has 4 characters.
 
 ---
 
-**Mathematical Operations**
+## Mathematical Operations
 - You can perform mathematical operations on integers in python ( strings can be "added" together using +)
 - "+" for addition  4 + 3
 - "-" for subtraction 4 - 3
