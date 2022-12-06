@@ -1,8 +1,8 @@
-## Day One - Strings, Input, and Variables
+# Day One - Strings, Input, and Variables
 
 ---
 
-<p align=center><b>Strings</b></p>
+## Strings
 
 
 - To print text to console.
