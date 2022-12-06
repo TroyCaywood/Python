@@ -98,7 +98,7 @@ print(f"{random_name} is going to buy the meal today!")
 **Index Error**
 - When you try to pull an index number that is beyond what is actually in the list, you will get an index out of range error. For example, if you list had 50 entries, and you tried to do print(list[51]) you would get an error.
 
-**Nested Lists*
+**Nested Lists**
 - Lists can be nested inside each other.
 
 ```python
