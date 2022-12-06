@@ -54,3 +54,21 @@ Input a list of student heights
 
 171
 ```
+In this example we are finding the highest score in a list. We do this by creating a variable called max set to 0 and then creating a for loop that says if the score in the student_scores list is greater than the value in max, change max to that score. Then we print the result. This could also be done using print(max(student_scores))
+```python
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
+
+max = 0
+
+for score in student_scores:
+    if score > max:
+        max = score
+
+print(f"The highest score in the class is: {max}")
+```
+
+
+
