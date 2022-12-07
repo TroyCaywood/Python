@@ -29,7 +29,16 @@ Hello
 Bye
 ```
 **Indentation in Python**
-- A block of code can be indented using "ctrl+]" "["to un-inden in windows 
-- Indentation matters a lot in Python. Especially in functions. If the actions you are wanting to happen are not indented under the def statement, they will not run when the function is called
+- A block of code can be indented using "ctrl+]" in Windows. (] to unindent) 
+- Indentation matters a lot in Python. Especially in functions. If the actions you are wanting to happen are not indented under the def statement, they will not run when the function is called.
 ``python
-def 
+# This function would print "Hello" and "World" when called
+def my_function():
+  print("Hello")
+  print("wWorld")
+  
+# This function would only print "Hello" because print("World") is not indented and therefore is OUTSIDE of the function
+def my_function():
+  print("Hello")
+print("World")
+```
