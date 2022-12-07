@@ -43,3 +43,15 @@ def my_function():
   print("Hello")
 print("World")
 ```
+- You can kind of think of it like the folder structure on a filesystem. If you have a set of files inside a folder and you are browsing to that folder, you can only see those files at that time. If you have another file outside of that folder, it is not visible to you. 
+- You can use tab or four spaces to indent, but Python does not allow you to mix both in a file so choose one. Most editors will allow you to change tab to insert 4 spaces as well.
+
+In this example you can think of the def portion followed by everything else as one container, the if functions with their print statements are two separate containers within the def container.
+```python
+def my_function():
+  if sky == "clear":
+    print("blue")
+  elif sky == "cloudy":
+    print("grey")
+```
+  
