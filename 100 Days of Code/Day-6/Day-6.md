@@ -1,4 +1,4 @@
-# Day 6 - Python Functions and Karel
+# Day 6 - Python Functions
 
 
 ## Functions
