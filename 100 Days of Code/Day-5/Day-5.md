@@ -123,3 +123,4 @@ for number in range(1, 101):
 ```
 ---
 
+## Day 5 Challenge - [code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-5/Randpassgen.py) - Don't click if you are going to attempt yourself first.
