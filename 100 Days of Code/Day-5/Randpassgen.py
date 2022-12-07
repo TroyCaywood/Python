@@ -16,23 +16,30 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
-# create password list
+# create password list to store random choices in
 password_list = []
 
-for choice in range(1, nr_letters + 1):
+#Take choice int variable for letters and put it into for loop. The for loop goes from 1 to the chosen number + 1 (because otherwise it would not include the chosen number) then for each number in that range (1 through chosen number +1) the for loop uses the random module choice method to choose a random index in the letters list and then adds it to the password_list list.
+for char in range(1, nr_letters + 1):
   password_list += random.choice(letters)
 
-for choice in range(1, nr_symbols + 1):
+ #repeat for symbols list
+for char in range(1, nr_symbols + 1):
   password_list += random.choice(symbols)
 
-for choice in range(1, nr_numbers + 1):
+  #repeat for numbers list
+for char in range(1, nr_numbers + 1):
   password_list += random.choice(numbers)
 
-randpass = random.shuffle(password_list)
+# Use the shuffle method from random module to randomly rearrange the password_list list to increase randomization of password.
+random.shuffle(password_list)
 
+# Create a variable called password set to a blank string where we can store the final password
 password = ""
 
+# Using a for loop, we now pull each index from the password_list and add it to the empty string to combine the list into one string.
 for character in password_list:
   password += character
 
+#Using and fstring print the final password.
 print(f"Your randomly generated password is {password}")
