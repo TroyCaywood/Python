@@ -54,4 +54,23 @@ def my_function():
   elif sky == "cloudy":
     print("grey")
 ```
+
+## While Loops
+- A while loop will execute a set of statements as long as a condition is true.
+```python
+while something_is_true:
+  #Do something repeatedly
+```
+This code would print "You still have stuff!" 6 times.
+```python
+# Define a variable called stuff and set it to 6
+stuff = 6
+
+# While stuff is greater than 0
+while stuff > 0:
+  print("You still have stuff!")
+  # Subtract 1 from stuff variable
+  number_of_hurdles -= 1
+```
+
   
