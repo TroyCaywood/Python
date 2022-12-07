@@ -28,3 +28,8 @@ my_function()
 Hello
 Bye
 ```
+**Indentation in Python**
+- A block of code can be indented using ctrl+] ([ to un-indent) in windows 
+- Indentation matters a lot in Python. Especially in functions. If the actions you are wanting to happen are not indented under the def statement, they will not run when the function is called
+``python
+def 
