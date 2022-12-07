@@ -69,6 +69,57 @@ for score in student_scores:
 
 print(f"The highest score in the class is: {max}")
 ```
+## For loops and the range function
 
+- You can use a for loop without pointing to a list using the range function.
+Notice that it doesn't include the last number in the range. If you truely wanted the numbers 1-10 you would have to use range(1, 11)
+```python
+for number in range (1, 10):
+  print(number)
+  
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ ```
+ - If you want to count by a number other than one you can add another comma with and then the step size
+ 
+ ```python
+ for number in range(1, 11, 3):
+  print(number)
+  
+  1
+  4
+  7
+  10
+  ```
+ If you wanted to find the total sum of all even numbers between 1 and 100 you could write something like this:
+  ```python
+even_numbers = 0
 
+for number in range(2, 101, 2):
+    even_numbers += number
+
+print(even_numbers)
+
+2550
+```
+[FIZZBUZZ!](https://en.wikipedia.org/wiki/Fizz_buzz) Notice that we have to write the fizzbuzz if statement first, because otherwize it would stop at fizz or buzz since both of those statements are true.
+```python
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+```
+---
 
