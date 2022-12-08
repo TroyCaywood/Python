@@ -170,4 +170,4 @@ else:
 
 ---
 
-***Day 3 Challenge*** - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-3/Treasure_hunt.py)
+***Day 3 Challenge*** - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_3_Treasure_hunt.py)
