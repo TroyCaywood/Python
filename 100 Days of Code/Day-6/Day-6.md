@@ -44,7 +44,7 @@ def my_function():
 print("World")
 ```
 - You can kind of think of it like the folder structure on a filesystem. If you have a set of files inside a folder and you are browsing to that folder, you can only see those files at that time. If you have another file outside of that folder, it is not visible to you. 
-- You can use tab or four spaces to indent, but Python does not allow you to mix both in a file so choose one. Most editors will allow you to change tab to insert 4 spaces as well.
+- You can use tab or four spaces to indent, but Python does not allow you to mix both in a file so choose one. Python documentation recommends four spaces rather than tab. Most editors will allow you to change tab to insert 4 spaces as well.
 
 In this example you can think of the def portion followed by everything else as one container, the if functions with their print statements are two separate containers within the def container.
 ```python
@@ -60,17 +60,24 @@ def my_function():
 ```python
 while something_is_true:
   #Do something repeatedly
+  #do something else
+  #etc
 ```
-This code would print "You still have stuff!" 6 times.
+This code would print "You still have #of stuff stuff!" 6 times.
 ```python
 # Define a variable called stuff and set it to 6
 stuff = 6
 
 # While stuff is greater than 0
 while stuff > 0:
-  print("You still have stuff!")
+  print(f"You still have {stuff} stuff!")
   # Subtract 1 from stuff variable
   number_of_hurdles -= 1
 ```
+- For loops are better for working with lists and ranges when you care about where you are in the list and what item you're iterating etc
+- While loops are better when you want to carry out a function many times until a condition that you set
+- While loops can be a little more dangerous since you can create a loop that never becomes false and this creates an infinite loop where the code does not stop
 
+---
+## Day 6 - No real code challenge today. Play with [Reborg](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) and see if you can escape the maze using while loops and if elif else statements!
   
