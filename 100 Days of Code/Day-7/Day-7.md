@@ -35,7 +35,7 @@ for word in chosen_word:
 ```
 
 - Now we need to change our code so it displays blanks instead of the letters in the chosen word and then replaces those blanks with the player's guess if it's correct
-``python
+```python
 #Step 2
 
 import random
