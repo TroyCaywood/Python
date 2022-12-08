@@ -94,4 +94,4 @@ best_pie = "pumpkin"
 - Pay attention to your variable names when referencing them in functions etc. Spelling or casing errors will genearate a NameError if the variable is not defined by that spelling or casing.
 
 ---
-***Day 1 Project*** - [Band Generator](https://replit.com/@TroyCaywood/band-name-generator-start?v=1) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-1/band_generator.py) Do **NOT** click if you plan on doing the project yourself.
+***Day 1 Project*** - [Band Generator](https://replit.com/@TroyCaywood/band-name-generator-start?v=1) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_1_band_generator.py) Do **NOT** click if you plan on doing the project yourself.
