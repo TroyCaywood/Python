@@ -12,3 +12,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-3/Day-3.md) - Control Flow and Logical Operators
 - [Day Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-4/Day-4.md) - Randomisation and Python Lists
 - [Day Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-5/Day-5.md) - Python Loops
+- [Day Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-6/Day-6.md) - Functions
