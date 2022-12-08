@@ -72,7 +72,7 @@ stuff = 6
 while stuff > 0:
   print(f"You still have {stuff} stuff!")
   # Subtract 1 from stuff variable
-  number_of_hurdles -= 1
+  stuff -= 1
 ```
 - For loops are better for working with lists and ranges when you care about where you are in the list and what item you're iterating etc
 - While loops are better when you want to carry out a function many times until a condition that you set
