@@ -79,5 +79,5 @@ while stuff > 0:
 - While loops can be a little more dangerous since you can create a loop that never becomes false and this creates an infinite loop where the code does not stop
 
 ---
-## Day 6 - No real code challenge today. Play with [Reborg](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) and see if you can escape the maze using while loops and if elif else statements!
+## Day 6 - No real code challenge today. Play with [Reeborg](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) and see if you can escape the maze using while loops and if elif else statements!
   
