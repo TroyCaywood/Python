@@ -218,7 +218,7 @@ while not end_of_game:
     print(stages[lives])
 ```
 
-Finally we clean up the game by importing the word list and ASCII art as modules and adding more user feedback when a letter has been used already or they guessed wrong:
+Finally we clean up the game by importing the word list and ASCII art as modules (remember, python has built in [modules](https://www.w3schools.com/python/python_modules.asp) but you can also make your own by saving your code in a separate file and calling the code by doing nameoffile.variable) and adding more user feedback when a letter has been used already or they guessed wrong:
 ```python
 #Step 5
 
