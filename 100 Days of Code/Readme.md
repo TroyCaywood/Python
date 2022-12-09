@@ -8,8 +8,8 @@ The purpose of this repository is to keep myself motivated by providing a place 
 ---
 
 - [Day One](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/day-1.md) - Strings, Input, and Variables
-- [Day Two](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-2/Day-2.md) - Data Types and Manipulating Strings
-- [Day Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-3/Day-3.md) - Control Flow and Logical Operators
-- [Day Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-4/Day-4.md) - Randomisation and Python Lists
-- [Day Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-5/Day-5.md) - Python Loops
-- [Day Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Day-6/Day-6.md) - Functions
+- [Day Two](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-2.md) - Data Types and Manipulating Strings
+- [Day Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-3.md) - Control Flow and Logical Operators
+- [Day Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-4.md) - Randomisation and Python Lists
+- [Day Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-5.md) - Python Loops
+- [Day Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-6.md) - Functions
