@@ -66,3 +66,5 @@ greet_with_name(location="California", name="Bob")
 # "Isnt the weather nice in California today, Bob?"
 ```
 - Calling your functions this way is more accurate, but makes your code longer since you have to specify the keywords.
+
+
