@@ -67,4 +67,7 @@ greet_with_name(location="California", name="Bob")
 ```
 - Calling your functions this way is more accurate, but makes your code longer since you have to specify the keywords.
 
+---
+## Day 8 - [code challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_8_Caesar-Cipher.md) don't click if you plan on doing this challenge yourself
+
 
