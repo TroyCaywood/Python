@@ -13,3 +13,5 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-4.md) - Randomisation and Python Lists
 - [Day Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-5.md) - Python Loops
 - [Day Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-6.md) - Functions
+- [Day Seven](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-7.md) - Hangman
+- [Day Eight](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-8.md) - Beginner Function Parameters & Caesar Cipher
