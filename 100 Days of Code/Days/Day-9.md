@@ -62,3 +62,40 @@ To change an existing dictionary entry call the dictionary and the key you want 
 ```python
 dictionary["Vegemite sandwich"] = "Possibly delicious"
 ```
+To loop through a dictionary
+```python
+for key in dictionary:
+    print(key)
+    print(dictionary[key])
+```
+- If you only called print(key) all that would print would be the keys in the dictionary and not the value. 
+
+Here is an example of using a for loop to create a new dictionary of student grades from another dictionary with their scores.
+```python
+# Dictionary of student scores
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+# Create empty dictionary
+student_grades = {}
+
+# For loop to loop that populates the student_grades dictionary
+for student in student_scores:
+    score = student_scores[student]
+    if score >= 91:
+        student_grades[student] = "Outstanding"
+    elif score >= 81 and score <= 90:
+        student_grades[student] = "Exceeds Expectations"
+    elif score >= 71 and score <= 80:
+        student_grades[student] = "Acceptable"
+    else:
+        student_grades[student] = "Fail"
+    
+print(student_grades)
+
+# This would print: {'Harry': 'Exceeds Expectations', 'Ron': 'Acceptable', 'Hermione': 'Outstanding', 'Draco': 'Acceptable', 'Neville': 'Fail'}
+```
