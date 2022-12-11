@@ -176,3 +176,5 @@ print(travel_log)
 
 # This would print [{'country': 'France', 'visits': 12, 'cities': ['Paris', 'Lille', 'Dijon']}, {'country': 'Germany', 'visits': 5, 'cities': ['Berlin', 'Hamburg', 'Stuttgart']}, {'country': 'Russia', 'visits': 2, 'cities': ['Moscow', 'Saint Petersburg']}]
 ```
+---
+## Day 9 [code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_9_Silent-auction.py) Challenge - Silent Auction - Do not click if you plan on doing the challenge yourself
