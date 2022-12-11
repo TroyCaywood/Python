@@ -99,3 +99,80 @@ print(student_grades)
 
 # This would print: {'Harry': 'Exceeds Expectations', 'Ron': 'Acceptable', 'Hermione': 'Outstanding', 'Draco': 'Acceptable', 'Neville': 'Fail'}
 ```
+## Nesting lists and dictionaries
+- Lists and dictionaries can be nested inside of each other
+```python
+nested = {"Key1": {"dictionary2": "key2}, 
+    "Key2": ["list_item1", "list_item2"]
+}
+```
+Another example. We have a travel log dictionary that contains states as the keys and the values are lists that contain cities in those states:
+```python
+travel_log = {"Kansas": ["Kansas City", "Topeka", "Pratt"],
+    "Oklahoma": ["Oklahoma City", "Alva", "Ponka City"],
+    "California": ["San Francisco", "Los Angeles", "Palm Springs"]
+}
+```
+You can also nest other dictionaries inside of dictionaries or other lists inside of lists (though nesting lists inside of each other isn't as useful.
+In this example we nest 3 other dictionaries with the cities visited in a list in tha dictionary as well as the total visits to those cities.
+```python
+travel_log = "Kansas": {"cities_visited": ["Kansas City", "Topeka", "Pratt"], "Total Visits": 10},
+    "Oklahoma": {"cities_visited": ["Oklahoma City", "Alva", "Ponka City"], "Total Visits": 9},
+    "California": {"cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"], "Total Visits: 6}
+```
+Nesting dictionaries in a list. To make things easier to read. It's best to separate each item in the list/dictionary so they are on their own line.
+```python
+travel_log =[ 
+    {
+        "State": "Kansas",
+        "cities_visited": ["Kansas City", "Topeka", "Pratt"],
+        "Total Visits": 10
+    },
+    {
+        "State": "Oklahoma",
+        "cities_visited": ["Oklahoma City", "Alva", "Ponka City"],
+        "Total Visits": 9
+    },
+    {
+        "State": "California",
+        "cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"],
+        "Total Visits: 6
+    }
+]
+```
+
+Here is an example of creating a funciton to add a new dictionary to a list of dictionaries.
+
+```python
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+
+# Define function and parameters
+def add_new_country(country_visited, times_visited, cities_visited):
+    # Create an empty dictionary
+    new_country = {}
+    # Add country name to new dictionary
+    new_country["country"] = country_visited
+    # Add times visited to new dictionary
+    new_country["visits"] = times_visited
+    # Add cities visited to new dictionary
+    new_country["cities"] = cities_visited
+    # Use the append function to append the new dictionary to the travel_log dictionary
+    travel_log.append(new_country)
+
+# Add a new country
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+
+# This would print [{'country': 'France', 'visits': 12, 'cities': ['Paris', 'Lille', 'Dijon']}, {'country': 'Germany', 'visits': 5, 'cities': ['Berlin', 'Hamburg', 'Stuttgart']}, {'country': 'Russia', 'visits': 2, 'cities': ['Moscow', 'Saint Petersburg']}]
+```
