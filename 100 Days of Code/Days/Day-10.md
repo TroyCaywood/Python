@@ -55,3 +55,20 @@ def format_name(f_name, l_name):
 print(format_name(input("What is your first name?"), input("What is your last name"))
 
 # Now if someone enters a blank name, the console would print "You didn't provide valid inputs"
+```
+
+## Docstrings
+
+- A Python docstring is a string used to document a Python module, class, function or method, so programmers can understand what it does without having to read the details of the implementation. Also, it is a common practice to generate online (html) documentation automatically from docstrings. Docstrings are contained within three sets of quotation marks and are the first line after defining a function. Docstrings can be multiple lines without causing issues. Can also be used on its own without being in a function to create a multi-line comment. Though, python documentation recommends against doing this and the better way is to write your comments, highlight them and press ctlr+/ to comment all the lines
+
+Our previous format_name function with a docstring that describes what it does
+```python
+def format_name(f_name, l_name):
+"""Take a first and last name and format it so it is 
+in title casing format"""
+    if f_name == "" or l_name = ""
+        return "You didn't provide valid inputs"
+    formatted_f_name = f_name.title()
+    formatted_l_name = l_name.title()
+    return f"{formatted_f_name} {formatted_l_name}"
+```
