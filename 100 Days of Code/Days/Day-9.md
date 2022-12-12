@@ -107,7 +107,7 @@ nested = {"Key1": {"dictionary2": "key2"},
 }
 
 # Print dictionary2 key value
-print(["Key1"]["dictionary2"]
+print(["Key1"]["dictionary2"])
 
 # This would print key2 to the console
 ```
