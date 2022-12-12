@@ -80,4 +80,4 @@ in title casing format"""
 - Recursion is calling a function within itself. This could be useful if you wanted to start a function over from the beginning out of a loop for example. Be careful with recursion though since it's an easy way to get your code stuck in an infinite loop. Make sure you have a condition that needs to be met in order for the function to call itself.
 
 ---
-## Day 10 - [code challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-10/Day_10-Calculator.py) - Don't click if you are going to attempt yourself.
+## Day 10 - [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-10/Day_10-Calculator.py) - Don't click if you are going to attempt yourself.
