@@ -170,4 +170,4 @@ else:
 
 ---
 
-***Day 3 Challenge*** - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_3_Treasure_hunt.py)
+##Day 3 [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_3_Treasure_hunt.py) - Treasure Hunt - Do not click if you plan on doing the challenge yourself.
