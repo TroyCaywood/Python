@@ -72,3 +72,9 @@ in title casing format"""
     formatted_l_name = l_name.title()
     return f"{formatted_f_name} {formatted_l_name}"
 ```
+
+## Print versus Return
+- Using return can be a better solution when you want to store the results of a function in a variable and user it in other areas of your code. If you simply printed instead of using result, you wouldn't be able to do so.
+
+## Recursion
+- Recursion is calling a function within itself. This could be useful if you wanted to start a function over from the beginning out of a loop for example. Be careful with recursion though since it's an easy way to get your code stuck in an infinite loop. Make sure you have a condition that needs to be met in order for the function to call itself.
