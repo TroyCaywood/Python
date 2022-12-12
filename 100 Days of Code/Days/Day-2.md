@@ -122,4 +122,4 @@ Your score is 0, your height is 1.8, you are winning is True
 ```
 ---
 
-***Day 2 Project*** - [Tip Calculator](https://replit.com/@TroyCaywood/TipCalculator1#main.py) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_2_tip_calculator.py) Do **NOT** click if you plan on doing the project yourself.
+## Day 2 [Code Challenge](https://replit.com/@TroyCaywood/TipCalculator1#main.py) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_2_tip_calculator.py) Do **NOT** click if you plan on doing the project yourself.
