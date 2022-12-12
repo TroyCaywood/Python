@@ -22,7 +22,8 @@ Programming_Dictionary = {"Bug": "An error in a program that prevents a program 
 - To make your dictionaries more readable, best practices is to put a return after each dictionary entry and then indent the lines under the first line one indention and put the end curly bracket in line with the start of the dictionary.
 - Accessing values in a dictionary is similar to accessing lists.
 ```python
-Programming_Dictionary = {"Bug": "An error in a program that prevents a program from running as expected.",
+Programming_Dictionary = {
+    "Bug": "An error in a program that prevents a program from running as expected.",
     "Function": "A piece of code that you can easily call over and over again.",
     "Loop": "The action of doing something over and over again."
 }
@@ -46,7 +47,8 @@ new_dictionary = {}
 
 To clear an existing dictionary
 ```python
-dictionary = {"Ham Sandwich": "Delicous",
+dictionary = {
+    "Ham Sandwich": "Delicous",
     "Peanutbutter Sandwich": "Also delicious",
     "Vegemite sandwich": "Not sure"
 }
@@ -113,7 +115,8 @@ print(["Key1"]["dictionary2"])
 ```
 Another example. We have a travel log dictionary that contains states as the keys and the values are lists that contain cities in those states:
 ```python
-travel_log = {"Kansas": ["Kansas City", "Topeka", "Pratt"],
+travel_log = {
+    "Kansas": ["Kansas City", "Topeka", "Pratt"],
     "Oklahoma": ["Oklahoma City", "Alva", "Ponka City"],
     "California": ["San Francisco", "Los Angeles", "Palm Springs"]
 }
@@ -121,7 +124,8 @@ travel_log = {"Kansas": ["Kansas City", "Topeka", "Pratt"],
 You can also nest other dictionaries inside of dictionaries or other lists inside of lists (though nesting lists inside of each other isn't as useful.
 In this example we nest 3 other dictionaries with the cities visited in a list in tha dictionary as well as the total visits to those cities.
 ```python
-travel_log = "Kansas": {"cities_visited": ["Kansas City", "Topeka", "Pratt"], "Total Visits": 10},
+travel_log ={ 
+    "Kansas": {"cities_visited": ["Kansas City", "Topeka", "Pratt"], "Total Visits": 10},
     "Oklahoma": {"cities_visited": ["Oklahoma City", "Alva", "Ponka City"], "Total Visits": 9},
     "California": {"cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"], "Total Visits: 6}
 ```
