@@ -145,7 +145,7 @@ travel_log =[
     {
         "State": "California",
         "cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"],
-        "Total Visits: 6
+        "Total Visits": 6
     }
 ]
 ```
