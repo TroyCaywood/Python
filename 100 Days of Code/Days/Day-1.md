@@ -95,4 +95,4 @@ best_pie = "pumpkin"
 
 ---
 
-## Day 1 Project[Code Challenge](https://replit.com/@TroyCaywood/band-name-generator-start?v=1) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_1_band_generator.py) Do **NOT** click if you plan on doing the project yourself.
+## Day 1 [Code Challenge](https://replit.com/@TroyCaywood/band-name-generator-start?v=1) - [Code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day_1_band_generator.py) Do **NOT** click if you plan on doing the project yourself.
