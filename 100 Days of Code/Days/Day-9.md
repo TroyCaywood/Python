@@ -102,9 +102,14 @@ print(student_grades)
 ## Nesting lists and dictionaries
 - Lists and dictionaries can be nested inside of each other
 ```python
-nested = {"Key1": {"dictionary2": "key2}, 
+nested = {"Key1": {"dictionary2": "key2"}, 
     "Key2": ["list_item1", "list_item2"]
 }
+
+# Print dictionary2 key value
+print(["Key1"]["dictionary2"]
+
+# This would print key2 to the console
 ```
 Another example. We have a travel log dictionary that contains states as the keys and the values are lists that contain cities in those states:
 ```python
