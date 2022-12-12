@@ -6,7 +6,7 @@
 The purpose of this repository is to keep myself motivated by providing a place to store completed projects, as well as notes. So I can look back later and see my progress.
 
 ---
-
+## Beginner Section
 - [Day One](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-1.md) - Strings, Input, and Variables
 - [Day Two](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-2.md) - Data Types and Manipulating Strings
 - [Day Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-3.md) - Control Flow and Logical Operators
