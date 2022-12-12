@@ -127,7 +127,7 @@ In this example we nest 3 other dictionaries with the cities visited in a list i
 travel_log ={ 
     "Kansas": {"cities_visited": ["Kansas City", "Topeka", "Pratt"], "Total Visits": 10},
     "Oklahoma": {"cities_visited": ["Oklahoma City", "Alva", "Ponka City"], "Total Visits": 9},
-    "California": {"cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"], "Total Visits: 6}
+    "California": {"cities_visited": ["San Francisco", "Los Angeles", "Palm Springs"], "Total Visits": 6}
 ```
 Nesting dictionaries in a list. To make things easier to read. It's best to separate each item in the list/dictionary so they are on their own line.
 ```python
