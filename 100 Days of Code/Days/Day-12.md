@@ -6,7 +6,7 @@
 #### Local Scope
 - Local scope exists within functions
 
-In this example we defin a function called drink_potion and create a variable called potion_strength that is 2. When we call the function it prints 2, but if you try to print the potion_strength variable you get a name error. That's because the potion_strength variable only is accessible from within the drink_potion function. It is in the drink_potion's local scope.
+In this example we define a function called drink_potion and create a variable called potion_strength that is set to 2. When we call the function it prints 2, but if you try to print the potion_strength variable you get a name error. That's because the potion_strength variable only is accessible from within the drink_potion function. It is in the drink_potion's local scope.
 ```python
 # Local Scope
 
@@ -37,7 +37,7 @@ drink_potion()
 - The concept of scope applies to anything that you assign a name to. The scope is it's namespace. 
 
 ### There is no block scope
-- Some programming languages have block scope where if you define a variable within an if, while, for block of code that variable would be within the local scope of the if, while, for block. In python that is not the case.
+- Some programming languages have block scope where if you define a variable nested within an if, while, for block of code that variable would be within the local scope of the if, while, for block. In python that is not the case.
 
 In this example, new_enemy is nested within an if statement, but you can still call the new_enemy variable outide of the if statement because there is no block scope for if statements in python.
 ```python
