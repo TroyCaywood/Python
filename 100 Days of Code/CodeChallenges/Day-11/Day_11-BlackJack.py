@@ -45,7 +45,7 @@ def play_game():
   computer_score = sum(computer_cards)
   user_score = sum(user_cards)
   print(f"Your cards are: {user_cards}\nYour score is: {user_score}\n")
-  print(f"Computer has a: {computer_cards[0]}")
+  print(f"Computer has a: {computer_cards[0]}\n")
 
   # Start of while list. Check if computer or user have a blackjack or if the user has gone over 21.
   while should_continue:
@@ -60,7 +60,7 @@ def play_game():
       should_continue = False
     # Ask the player if the ywould like to draw again
     else:
-      draw_again = input(f"Your score is currently {user_score}. Would you like to draw another card? Y or N: ")
+      draw_again = input(f"Your score is currently {user_score}.\n\nWould you like to draw another card? Y or N: ")
       # If player wants to draw again, create draw_user variable that calls deal_card function 
       # to get a random card. Append the random card to the user_cards list and then set              
       # user_score to the new sum of user_cards list. Print card the user drew.
