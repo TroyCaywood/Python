@@ -10,18 +10,22 @@ def play_game():
   user_cards = []
   computer_cards = []
 
-  # Create deal_card function that contains a card list and then chooses a random card from         the list and returns that card
+  # Create deal_card function that contains a card list and then chooses a random card from
+  # the list and returns that card
   def deal_card():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     card = random.choice(cards)
     return card
 
-  # For integer in range of 2 append two random cards to user_cards list and computer_cards         list
+  # For integer in range of 2 append two random cards to user_cards list and computer_cards list
   for i in range(2):
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
 
-  # Define calculate_score function that totals a list of cards and if that total is equal to       21, it sets the total to 0. Also checks if card is equal to 1 and the total is greater         than 21. If the total is greater than 21 it removes the 11 card and appends a card equal       to 1 and then changes the total to the new sum and returns the total. 
+  # Define calculate_score function that totals a list of cards and if that total is equal to
+  # 21, it sets the total to 0. Also checks if card is equal to 1 and the total is greater         
+  # than 21. If the total is greater than 21 it removes the 11 card and appends a card equal      
+  # to 1 and then changes the total to the new sum and returns the total. 
   def calculate_score(cards):
     total = sum(cards)
     if total == 21:
@@ -41,9 +45,9 @@ def play_game():
   computer_score = sum(computer_cards)
   user_score = sum(user_cards)
   print(f"Your cards are: {user_cards}\nYour score is: {user_score}\n")
-  print(f"Computer cards are: {computer_cards}\nComputer's score is: {computer_score}\n")
+  print(f"Computer has a: {computer_cards[0]}")
 
-  # Start of while list. Check if computer or user have a blackjack or if the user has gone         over 21.
+  # Start of while list. Check if computer or user have a blackjack or if the user has gone over 21.
   while should_continue:
     if computer_score == 0:
       print("Computer wins with 21. Blackjack!")
@@ -57,7 +61,9 @@ def play_game():
     # Ask the player if the ywould like to draw again
     else:
       draw_again = input(f"Your score is currently {user_score}. Would you like to draw another card? Y or N: ")
-      # If player wants to draw again, create draw_user variable that calls deal_card function         to get a random card. Append the random card to the user_cards list and then set               user_score to the new sum of user_cards list. Print card the user drew.
+      # If player wants to draw again, create draw_user variable that calls deal_card function 
+      # to get a random card. Append the random card to the user_cards list and then set              
+      # user_score to the new sum of user_cards list. Print card the user drew.
       if draw_again.lower() == "y":
         draw_user = deal_card()
         user_cards.append(draw_user)
@@ -67,7 +73,9 @@ def play_game():
       elif draw_again.lower() == "n":
         should_continue = False
 
-  # While loop for computer to draw cards. While computer doesn't have a blackjack and their      score is under 17 the computer will draw random cards and then add the computer_cards         list then change the computer score to the new sum. 
+  # While loop for computer to draw cards. While computer doesn't have a blackjack and their
+  # score is under 17 the computer will draw random cards and then add the computer_cards         
+  # list then change the computer score to the new sum. 
   while computer_score != 0 and computer_score <= 17:
     computer_cards.append(deal_card())
     computer_score = sum(computer_cards)
