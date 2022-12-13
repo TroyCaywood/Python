@@ -114,3 +114,12 @@ print(f"enemies outside function: {enemies}")
 # This would print enemies inside function: 2 enemies outside function: 2 
 ```
 
+## Global Constants
+- Global constants are variables that you define, but you never plan on changing again. EX: The value of pi (3.14159).
+- When defining a global constant, the naming convention is to use all uppercase for the variable name. This is to remind you not to modify that variable within your code.
+
+```python
+# Global Constants
+PI = 3.14159
+URL = "https://www.google.com"
+```
