@@ -1,6 +1,6 @@
 # Day 12 - Scope & Number Guessing Game
 
-## NamespacesL Local VS Global Scope
+## Namespaces Local VS Global Scope
 ### Scope
 
 #### Local Scope
