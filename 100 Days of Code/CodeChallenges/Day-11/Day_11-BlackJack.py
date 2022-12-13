@@ -15,6 +15,11 @@ def play_game():
   for i in range(2):
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
+
+  def deal1card():
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    card = random.choice(cards)
+    return card
     
   def calculate_score(cards):
     total = sum(cards)
@@ -32,10 +37,10 @@ def play_game():
     return total
     
   should_continue = True
-  computer_score = calculate_score(computer_cards)
-  user_score = calculate_score(user_cards)
-  print(f"Your cards are {user_cards} your score is {user_score}")
-  print(f"Computer cards are {computer_cards} computer's score is {computer_score}")
+  computer_score = sum(computer_cards)
+  user_score = sum(user_cards)
+  print(f"Your cards are: {user_cards}\nYour score is: {user_score}\n")
+  print(f"Computer cards are: {computer_cards}\nComputer's score is: {computer_score}\n")
   
   while should_continue:
     if computer_score == 0:
@@ -50,13 +55,16 @@ def play_game():
     else:
       draw_again = input(f"Your score is currently {user_score}. Would you like to draw another card? Y or N: ")
       if draw_again.lower() == "y":
-        draw = deal_card()
-        user_score += draw
-        print(f"You drew {draw}")
+        draw_user = deal_card()
+        #draw_user
+        user_cards.append(draw_user)
+        user_score = sum(user_cards)
+        print(f"You drew {draw_user}\n\n")
       elif draw_again.lower() == "n":
         should_continue = False
   while computer_score != 0 and computer_score <= 17:
-    computer_score += deal_card()
+    computer_cards.append(deal_card())
+    computer_score = sum(computer_cards)
   
   def compare(user_score, computer_score):
     if user_score == computer_score:
@@ -74,7 +82,8 @@ def play_game():
     else:
       return("You Lose!")
 
-  print(f"Computer Score: {computer_score}\n  Player Score: {user_score}\n {compare(user_score, computer_score)}")
+
+  print(f"Computer Score: {computer_score}\nComputer Hand {computer_cards}\n\nPlayer Score: {user_score}\nPlayer Hand: {user_cards}\n\n{compare(user_score, computer_score)}")
 
 play_game()
 
