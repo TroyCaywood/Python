@@ -64,7 +64,7 @@ def create_enemy:
 print(new_enemy)
 # This would give us a name error.
 ```
-## Modifying a global variable
+### Modifying a global variable
 
 In this example, even though we see two instances of the variable "enemies", different values are printed when we call the enemies variable inside the function versus outside the function. That is because they are really two completely separate variables that just happen to be named the same. The enemies within the increase_enemies function is only accessible from within that function. It's not a good idea to name local and global variables the same thing.
 ```python
@@ -114,7 +114,7 @@ print(f"enemies outside function: {enemies}")
 # This would print enemies inside function: 2 enemies outside function: 2 
 ```
 
-## Global Constants
+### Global Constants
 - Global constants are variables that you define, but you never plan on changing again. EX: The value of pi (3.14159).
 - When defining a global constant, the naming convention is to use all uppercase for the variable name. This is to remind you not to modify that variable within your code.
 
