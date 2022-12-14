@@ -11,9 +11,11 @@
 import random
 from art import logo
 
+# Create random number global variable
 RAND_NUMBER = random.randint(1, 100)
 
 
+# Define difficulty function. If easy, guesses = 10 and return 10, if hard guesses = 5 and return 5.
 def difficulty():
     difficulty = input("Choose a difficulty. Type 'easy' or 'hard.: '")
     if difficulty.lower() == "easy":
@@ -23,16 +25,20 @@ def difficulty():
         guesses = 5
         return guesses
 
+# Define start game function
 def start_game():
-  
+    # Condition variable for while loop
     playing = True
     print(logo)
     print("Welcome to the number guessing game!\nI'm thinking of a number between 1 and 100.\n")
+    # Remain guesses variable that calls the difficulty function to obtain the number of guesses for the game.
     remain_guesses = difficulty()
-  
+    
+    # Start of while loop.
     while playing:
+        # Prompt for a guess
         player_guess = int(input(f"Make a guess you have {remain_guesses} guesses: "))
-
+        # If statements to check guess
         if remain_guesses == 1:
             print(f"You're out of guesses. The number was {RAND_NUMBER}")
             playing = False
@@ -48,5 +54,6 @@ def start_game():
             print(f"You guessed the correct number. {RAND_NUMBER}")
             playing = False
 
+# Call start game function
 start_game()
     
