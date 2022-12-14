@@ -15,38 +15,38 @@ RAND_NUMBER = random.randint(1, 100)
 
 
 def difficulty():
-      difficulty = input("Choose a difficulty. Type 'easy' or 'hard.: '")
-      if difficulty.lower() == "easy":
+    difficulty = input("Choose a difficulty. Type 'easy' or 'hard.: '")
+    if difficulty.lower() == "easy":
         guesses = 10
         return guesses
-      elif difficulty.lower() == "hard":
+    elif difficulty.lower() == "hard":
         guesses = 5
         return guesses
 
 def start_game():
   
-  playing = True
-  print(logo)
-  print("Welcome to the number guessing game!\nI'm thinking of a number between 1 and 100.\n")
-  remain_guesses = difficulty()
+    playing = True
+    print(logo)
+    print("Welcome to the number guessing game!\nI'm thinking of a number between 1 and 100.\n")
+    remain_guesses = difficulty()
   
-  while playing:
-    player_guess = int(input(f"Make a guess you have {remain_guesses} guesses: "))
-    
-    if remain_guesses == 1:
-      print(f"You're out of guesses. The number was {RAND_NUMBER}")
-      playing = False
-    if player_guess < RAND_NUMBER:
-      print("Too low")
-      remain_guesses -= 1
-      print(f"You have {remain_guesses} guesses left.")
-    elif player_guess > RAND_NUMBER:
-      print("Too High")
-      remain_guesses -= 1
-      print(f"You have {remain_guesses} guesses left.")   
-    elif player_guess == RAND_NUMBER:
-      print(f"You guessed the correct number. {RAND_NUMBER}")
-      playing = False
+    while playing:
+        player_guess = int(input(f"Make a guess you have {remain_guesses} guesses: "))
+
+        if remain_guesses == 1:
+            print(f"You're out of guesses. The number was {RAND_NUMBER}")
+        playing = False
+            if player_guess < RAND_NUMBER:
+            print("Too low")
+            remain_guesses -= 1
+            print(f"You have {remain_guesses} guesses left.")
+        elif player_guess > RAND_NUMBER:
+            print("Too High")
+            remain_guesses -= 1
+            print(f"You have {remain_guesses} guesses left.")   
+        elif player_guess == RAND_NUMBER:
+            print(f"You guessed the correct number. {RAND_NUMBER}")
+            playing = False
 
 start_game()
     
