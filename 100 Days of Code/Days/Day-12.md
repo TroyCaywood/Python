@@ -123,3 +123,4 @@ print(f"enemies outside function: {enemies}")
 PI = 3.14159
 URL = "https://www.google.com"
 ```
+# Day 12 - [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-12/Day_12-GuessNumber.py) - Guess The Number - Do not click before you attempt this one yourself.
