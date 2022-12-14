@@ -35,8 +35,8 @@ def start_game():
 
         if remain_guesses == 1:
             print(f"You're out of guesses. The number was {RAND_NUMBER}")
-        playing = False
-            if player_guess < RAND_NUMBER:
+            playing = False
+        if player_guess < RAND_NUMBER:
             print("Too low")
             remain_guesses -= 1
             print(f"You have {remain_guesses} guesses left.")
