@@ -39,7 +39,7 @@ drink_potion()
 ### There is no block scope
 - Some programming languages have block scope where if you define a variable nested within an if, while, for block of code that variable would be within the local scope of the if, while, for block. In python that is not the case.
 
-In this example, new_enemy is nested within an if statement, but you can still call the new_enemy variable outide of the if statement because there is no block scope for if statements in python.
+In this example, new_enemy is nested within an if statement, but you can still call the new_enemy variable outside of the if statement because there is no block scope for if statements in python.
 ```python
 # No block scope
 game_level = 3
