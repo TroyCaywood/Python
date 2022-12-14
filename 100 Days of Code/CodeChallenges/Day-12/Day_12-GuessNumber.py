@@ -13,7 +13,6 @@ from art import logo
 
 RAND_NUMBER = random.randint(1, 100)
 
-print(RAND_NUMBER)
 
 def difficulty():
       difficulty = input("Choose a difficulty. Type 'easy' or 'hard.: '")
