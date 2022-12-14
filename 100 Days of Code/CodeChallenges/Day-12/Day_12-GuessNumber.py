@@ -17,7 +17,7 @@ RAND_NUMBER = random.randint(1, 100)
 
 # Define difficulty function. If easy, guesses = 10 and return 10, if hard guesses = 5 and return 5.
 def difficulty():
-    difficulty = input("Choose a difficulty. Type 'easy' or 'hard.: '")
+    difficulty = input("Choose a difficulty. Type 'easy' or 'hard.': ")
     if difficulty.lower() == "easy":
         guesses = 10
         return guesses
