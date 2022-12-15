@@ -144,3 +144,4 @@ print(total_words
 - Ask a friend! Ask someone else to look through your code and see if they can help you find the issue.
 - Run often! Make sure you run your code often. Don't wait until you're at the very last item before you even try running your code. Make sure you test things as you add them by running your code. If you do end up with multiple bugs, try to tackle them one at a time.
 - Ask stackoverflow! [Stack Overflow](https://stackoverflow.com) is a great resource for programmers and full of helpful people. You may even find your issue on there without having to ask a question even.
+- Everyone gets bugs! Having bugs in your program doesn't mean you're a bad programmer. Every programmer ends up with bugs in their program. Becoming skilled at fixing them yourself is a skill in itself.
