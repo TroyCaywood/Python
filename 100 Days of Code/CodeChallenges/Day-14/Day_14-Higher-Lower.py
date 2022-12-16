@@ -13,9 +13,6 @@ for i in range(2):
           CHOICE_LIST.pop(0)
           CHOICE_LIST.append(random.choice(data))
 
-print(CHOICE_LIST)
-
-
 
 def play_game():
   points = 0
