@@ -6,15 +6,15 @@ from replit import clear
 CHOICE_LIST = []
 CHOICE = CHOICE_LIST.append(random.choice(data))
 
+# For integer in range of 2 append random choice to CHOICE_LIST (which will add a random dictionary to the list as index 0 and 1). If both choices are the same, remove index 0 and append another random choice until they aren't the same.
 for i in range(2):
     CHOICE_LIST.append(random.choice(data))
     while CHOICE_LIST[0]['name'] == CHOICE_LIST[1]['name']:
         CHOICE_LIST.pop(0)
         CHOICE_LIST.append(random.choice(data))
 
-print(CHOICE_LIST)
 
-
+# Define play_game function
 def play_game():
     points = 0
     still_playing = True
