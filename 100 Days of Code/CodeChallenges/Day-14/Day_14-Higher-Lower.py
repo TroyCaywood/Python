@@ -18,9 +18,12 @@ print(CHOICE_LIST)
 def play_game():
     points = 0
     still_playing = True
+    is_correct = ""
     while still_playing:
         print(logo)
-        print(f"Current Points: {points}\n")
+        if is_correct == "correct":
+          print(f"You're right! You have {points} points.")
+          is_correct = ""
         print(
             f"{CHOICE_LIST[0]['name']} a {CHOICE_LIST[0]['description']} from {CHOICE_LIST[0]['country']}\n"
         )
@@ -34,6 +37,7 @@ def play_game():
             if CHOICE_LIST[0]["follower_count"] > CHOICE_LIST[1][
                     "follower_count"]:
                 points += 1
+                is_correct = "correct"
                 CHOICE_LIST.pop(1)
                 CHOICE_LIST.append(random.choice(data))
                 while CHOICE_LIST[0]['name'] == CHOICE_LIST[1]['name']:
@@ -50,6 +54,7 @@ def play_game():
             if CHOICE_LIST[1]["follower_count"] > CHOICE_LIST[0][
                     "follower_count"]:
                 points += 1
+                is_correct = "correct"
                 CHOICE_LIST.pop(0)
                 CHOICE_LIST.append(random.choice(data))
                 while CHOICE_LIST[0]['name'] == CHOICE_LIST[1]['name']:
