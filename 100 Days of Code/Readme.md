@@ -21,3 +21,6 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Twelve](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-12.md) - Scope & Number Guessing Game
 - [Day Thirteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-13.md) - Debugging: How to Find and Fix Errors in Your Code
 - [Day Fourteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-14.md) - Higher Lower Game Project
+
+## Intermediate Section
+-[Day Fifteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-15.md) - Local Development Environment Setup and Coffee Machine Project
