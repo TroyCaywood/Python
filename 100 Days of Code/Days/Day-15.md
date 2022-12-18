@@ -2,6 +2,9 @@
 
 - Today's lecture was all about setting up a local development environment using Pycharm and Python
 - Using a local IDE is much better than using a web based editor such as replit since it has many more features
+- Download and install the latest version of [Python](https://www.python.org/downloads/) for your operating system. Install using default selections.
+- Download and in stall the latest version of [Pycharm Community Edition](https://www.jetbrains.com/pycharm/download/#section=mac). Install using default selections.
+- You could use something like Visual Studio Code too, but this course uses Pycharm.
 
 
 
