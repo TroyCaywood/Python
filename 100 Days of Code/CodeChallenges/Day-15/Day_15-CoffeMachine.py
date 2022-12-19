@@ -1,6 +1,4 @@
-from machine import MENU
-from machine import resources
-from machine import CHANGE
+from machine import MENU, resources, CHANGE
 
 money = 0
 
