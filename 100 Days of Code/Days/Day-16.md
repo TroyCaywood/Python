@@ -26,6 +26,8 @@ def take_payment(amount):
 - An **attribute** is a variable that is attached to a particular object
 - A **method** is a function that a modeled object can do
 - You can have multiple versions of objects generated from an object. This is called a **class**.
+- A Python **library** is a collection of related modules. It contains bundles of code that can be used repeatedly in different programs.
+- One example of a built in library is [turtle](https://docs.python.org/3/library/turtle.html). You can use it to draw graphics on the screen.
 
 ## Constructing objects and accessing their attributes and methods
 - Creating a new object from a class:
@@ -35,6 +37,11 @@ def take_payment(amount):
 # object = ClassName()
 car = CarBlueprint()
 ```
+- To access a method (a function that an object has) that an object has, you first type the object name followed by period and then the method that you're calling followed by parenthesis.
+```python
+car.stop()
+```
+
 
 
 
