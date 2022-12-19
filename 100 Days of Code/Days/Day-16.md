@@ -26,7 +26,7 @@ def take_payment(amount):
 - An **attribute** is a variable that is attached to a particular object
 - A **method** is a function that a modeled object can do
 - You can have multiple versions of objects generated from an object. This is called a **class**.
-- A Python **library** is a collection of related modules. It contains bundles of code that can be used repeatedly in different programs.
+- A **library** is an umbrella term referring to a reusable chunk of code. Usually, a Python library contains a collection of related modules and packages.
 - One example of a built in library is [turtle](https://docs.python.org/3/library/turtle.html). You can use it to draw graphics on the screen.
 
 ## Constructing objects and accessing their attributes and methods
@@ -41,7 +41,13 @@ car = CarBlueprint()
 ```python
 car.stop()
 ```
-
+- Python **packages** are basically a directory of a collection of modules.
+- There are many free developer packages that can be downloaded online from [Pypi](https://pypi.org/) (python package index)
+- You can install packages directly in Pycharm by going to file, settings, then go to your project, and click on python interpreter and then click the plus at the bottom of the screen and enter the name of the package you want to install then click on it and click install package.
+- To change an attribute of an object, you type the name of the object plus a period followed by the attribute and then an equals sign and the value of the attribute
+```python
+myobject.align = "l"
+```
 
 
 
