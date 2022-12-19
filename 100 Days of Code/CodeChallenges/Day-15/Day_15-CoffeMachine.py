@@ -16,7 +16,9 @@ def coffee_machine():
         elif wantcoffee.lower() == "off":
             money = 0
             quit()
-
+        else:
+          print("Please input a valid selection.")
+          coffee_machine()
         selection = MENU[wantcoffee.lower()]
         cost = selection["cost"]
         print(cost)
