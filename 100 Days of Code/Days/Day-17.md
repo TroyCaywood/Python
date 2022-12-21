@@ -112,7 +112,8 @@ user_2 = User("002", "Joe")
 
 user_1.follow(user_2)
 ```
+- The main benefit of OOP is it allows you to create an easily changable and updateable framework for your programs.
 ---
-# Day 17 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day_17-QuizGame) - Make sure you go through the whole video before clicking. You walk through this challenge together for the most part.
+## Day 17 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day_17-QuizGame) - Make sure you go through the whole video before clicking. You walk through this challenge together for the most part.
 
 
