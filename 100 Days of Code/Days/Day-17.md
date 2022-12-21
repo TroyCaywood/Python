@@ -88,7 +88,7 @@ user_1 = User("001", "Bob")
 
 print(user_1.username)
 print(user_1.followers)
-```python
+```
 
 - Methods can also be added to your init class. When adding a method, you must always add (self) to the definition since it tells the method what object it was called by.
 
@@ -111,6 +111,6 @@ user_1 = User("001", "Bob")
 user_2 = User("002", "Joe")
 
 user_1.follow(user_2)
-```python
+```
 
 
