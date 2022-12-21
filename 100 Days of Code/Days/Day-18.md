@@ -33,3 +33,45 @@ screen.exitonclick()
 Now we get a nice plum colored square!
 
 ![image ](https://user-images.githubusercontent.com/52113778/209012153-c453de29-f8e9-4e56-865b-8cac49d81bfa.png)
+
+## Different ways to import modules
+- There are several ways you can import modules
+- You can import the entire module, but then when creating objects you have to call the module name and then the name of the class
+```python
+import turtle
+
+tim = turtle.Turtle()
+```
+
+- You can import whatever you are wanting from the module individually. This makes creating obects a lot faster and easier.
+```python
+#keyword/ module name/ keyword/ thing in module
+from turtle import Turtle, Screen
+
+tim = Turtle()
+tom = Turtle()
+```
+
+-You can also import everything from the module using * The disadvantage of this is that it can make it hard to tell where modules came from if you're importing multiple different modules. It's rare to see good code written like this. Try to avoid if you can.
+```python
+from turtle import *
+from random import *
+
+# This is valid and from turtle, but is a bit confusing in isolation
+forward(100) 
+
+# Also valid and from random, but it's hard to tell which module it's coming from when reading the code since we imported everything.
+choice([1, 2, 3])
+```
+
+- You can also import a module as an alias that you define. This can save you some time so you don't have to type out the whole module name or use for clarity.
+```ptyhon
+import turtle as t
+
+tim = t.Turtle()
+```
+
+## Installing Modules
+- Not all modules can be imported and must be installed first
+- So say you wanted to use the [heroes](https://pypi.org/project/heroes/) module. You can't just import it because it is not a module that is packaged with the standard python library.
+- In pycharm, you can type import heroes and then hover over the word heroes and tell pycharm to install the module. Then you can import heroes and use it successfully.
