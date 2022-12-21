@@ -34,6 +34,36 @@ Now we get a nice plum colored square!
 
 ![image ](https://user-images.githubusercontent.com/52113778/209012153-c453de29-f8e9-4e56-865b-8cac49d81bfa.png)
 
+- Again, using the documentation we can figure out how to draw a dotted line
+```python
+from turtle import Turtle, Screen
+
+# Create turtle object
+tim = Turtle()
+
+# Change turtle shape to "turtle" shape
+tim.shape("turtle")
+
+# Change turtle color to plum
+tim.color("plum")
+
+# Move turtle forwards 10 and pick up the pen, move forwards 10, put the pen down 15 times
+for i in range(15):
+    tim.forward(10)
+    tim.penup()
+    tim.forward(10)
+    tim.pendown()
+
+# Create screen object
+screen = Screen()
+
+# Set screen object to display on until clicked
+screen.exitonclick()
+```
+![image](https://user-images.githubusercontent.com/52113778/209016889-a095feb7-308a-4f3e-b1ec-2fe807c9fb33.png)
+
+
+
 ## Different ways to import modules
 - There are several ways you can import modules
 - You can import the entire module, but then when creating objects you have to call the module name and then the name of the class
@@ -75,3 +105,4 @@ tim = t.Turtle()
 - Not all modules can be imported and must be installed first
 - So say you wanted to use the [heroes](https://pypi.org/project/heroes/) module. You can't just import it because it is not a module that is packaged with the standard python library.
 - In pycharm, you can type import heroes and then hover over the word heroes and tell pycharm to install the module. Then you can import heroes and use it successfully.
+
