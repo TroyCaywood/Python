@@ -90,4 +90,27 @@ print(user_1.username)
 print(user_1.followers)
 ```python
 
+- Methods can also be added to your init class. When adding a method, you must always add (self) to the definition since it tells the method what object it was called by.
+
+Now we've created a new follow method that we can call on our objects to increase their follower/following counts.
+```python
+class User:
+
+   def __init__(self, user_id, username):
+    self.id = user_id
+    self.username = username
+    self.followers = 0
+    self.following = 0
+    print(f"Creating user ID: {self.id} with the Username: {self.username}")
+    
+    def follow(self, user):
+      user.followers += 1
+      self.following += 1
+
+user_1 = User("001", "Bob")
+user_2 = User("002", "Joe")
+
+user_1.follow(user_2)
+```python
+
 
