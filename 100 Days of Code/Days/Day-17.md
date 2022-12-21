@@ -28,7 +28,7 @@ user_1.username = "bob"
 
 ## Constructor
 
-- A constructor is a part of the blueprint that allows you to specify what should happen when your object is being constructed. This is also known as **intializing** the object.
+- A constructor is a part of the class blueprint that allows you to specify what should happen when your object is being constructed. This is also known as **intializing** the object.
 - This allows you to set variables, counters, switches etc to their starting values.
 - To create a constructor we use the init function
 ```python
