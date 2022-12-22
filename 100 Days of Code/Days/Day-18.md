@@ -174,3 +174,35 @@ my_tuple = (1, 2, 3)
 # This would print 1 in index position 0
 print my_tuple[0]
 ```
+Lets rewrite our previous random walk using a tuple for the random RGB colors
+```python
+import turtle as t
+import random
+
+tim = t.Turtle()
+screen = t.Screen()
+
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_color = (r, g, b)
+    return random_color
+
+
+color_tuple = (random_color())
+
+tim.hideturtle()
+tim.pensize(5)
+tim.speed(0)
+t.colormode(255)
+
+for _ in range(200):
+    directions = [0, 90, 180, 270]
+    tim.forward(12)
+    tim.setheading(random.choice(directions))
+    tim.color(random_color())
+
+screen.exitonclick()
+```
