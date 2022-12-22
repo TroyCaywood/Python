@@ -11,4 +11,4 @@
 
 - Looks pretty close!
 
-##[Check out the code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-18/Day_18-HirstPainting.py)
+## [Check out the code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-18/Day_18-HirstPainting.py)
