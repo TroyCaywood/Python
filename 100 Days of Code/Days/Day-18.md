@@ -130,6 +130,35 @@ screen.exitonclick()
 That gives us this shape
 ![image](https://user-images.githubusercontent.com/52113778/209045479-01d5813d-09fd-454a-b525-6931adbe573d.png)
 
+Now lets have our turtle walk around randomly
+```python
+from turtle import Turtle, Screen
+import random
+
+tim = Turtle()
+screen = Screen()
+screen.colormode(255)
+
+# Hide turtle
+tim.hideturtle()
+# Change pen size
+tim.pensize(5)
+# Speed up turtle
+tim.speed(0)
+
+# For loop that takes a list of headings and then moves forward 12 and pickes a random heading and a random color
+for _ in range(200):
+    directions = [0, 90, 180, 270]
+    tim.forward(12)
+    tim.setheading(random.choice(directions))
+    tim.color(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255))
+
+
+screen.exitonclick()
+```
+![image](https://user-images.githubusercontent.com/52113778/209048886-5dbf1517-c16d-4214-9fa8-01bf10ed37e6.png)
+
+
 
 ## Installing Modules
 - Not all modules can be imported and must be installed first
