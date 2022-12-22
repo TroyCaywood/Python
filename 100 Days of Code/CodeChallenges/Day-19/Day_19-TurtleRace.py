@@ -5,11 +5,13 @@ import random
 is_race_on = False
 screen = Screen()
 screen.setup(width=500, height=400)
+# Prompt user to pick which turtle they think will win.
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-70, -40, -10, 20, 50, 80]
 all_turtles = []
 
+# Create six turtles of different color and move them to different y position on the -230 x coordinate.
 for turtle_index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.penup()
@@ -20,6 +22,8 @@ for turtle_index in range(0, 6):
 if user_bet:
     is_race_on = True
 
+# While race_is_on is True move the turtles forward at random intervals between 0 and 10 until one of them reaches the 230 x coordinate and then set
+# is_race_on to False and print whether the user picked the winner or not.
 while is_race_on:
     for turtle in all_turtles:
         if turtle.xcor() > 230:
