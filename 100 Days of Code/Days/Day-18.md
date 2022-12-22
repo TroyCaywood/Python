@@ -206,3 +206,5 @@ for _ in range(200):
 
 screen.exitonclick()
 ```
+---
+## Day 18 - [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-18/readme.md) - Damien Hurst Painting - Do not click until you try it yourself! This was a fun challenge, you can do it!
