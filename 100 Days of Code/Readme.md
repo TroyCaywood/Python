@@ -26,4 +26,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Fifteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-15.md) - Local Development Environment Setup and Coffee Machine Project
 - [Day Sixteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-16.md) - Object Oriented Programming (OOP)
 - [Day Seventeen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-17.md) - The Quiz Project & the Benefits of OOP
-- [Day Eighteen](https://github.com/TroyCaywood/Python/blob/main/%100%20Days%20of%20Code/Days/Day-18.md) - Turtle and the Graphical User Interface (GUI)
+- [Day Eighteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-18.md) - Turtle and the Graphical User Interface (GUI)
