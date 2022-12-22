@@ -165,3 +165,12 @@ screen.exitonclick()
 - So say you wanted to use the [heroes](https://pypi.org/project/heroes/) module. You can't just import it because it is not a module that is packaged with the standard python library.
 - In pycharm, you can type import heroes and then hover over the word heroes and tell pycharm to install the module. Then you can import heroes and use it successfully.
 
+## Tuples
+- Tuples are similar to lists in that they are ordered sets of data that can be accesed by index number.
+- The difference is that tuples **cannot** be changed. It is immutable.
+```python
+my_tuple = (1, 2, 3)
+
+# This would print 1 in index position 0
+print my_tuple[0]
+```
