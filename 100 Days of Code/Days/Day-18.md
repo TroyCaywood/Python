@@ -100,6 +100,36 @@ import turtle as t
 
 tim = t.Turtle()
 ```
+Now lets draw shapes with sides from 3-10 in random colors
+```python
+from turtle import Turtle, Screen
+import random
+
+tim = Turtle()
+screen = Screen()
+screen.colormode(255)
+
+tim.shape("turtle")
+
+# Create shape drawing function
+def draw_shape(num_sides):
+   # Angle for sides will be 360 / number of sides
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        tim.forward(100)
+        tim.right(angle)
+
+# For loop that draws a shape with 3-10 sides in a random color using RGB.
+for shape_side_n in range(3, 11):
+    tim.color(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255))
+    draw_shape(shape_side_n)
+
+
+screen.exitonclick()
+```
+That gives us this shape
+![image](https://user-images.githubusercontent.com/52113778/209045479-01d5813d-09fd-454a-b525-6931adbe573d.png)
+
 
 ## Installing Modules
 - Not all modules can be imported and must be installed first
