@@ -105,3 +105,22 @@ screen.exitonclick()
 - Now we can use the keys w, a, s, and d to draw on the screen and press c to clear the screen:
 
 ![image](https://user-images.githubusercontent.com/52113778/209177594-91c3a02e-d5f9-4889-abb8-fc9cd0563c03.png)
+
+## Object State and Instances
+
+- In object oriented programming we can have multiples of the same class assigned to different objects, but they all function separately since it's a new instance of that class:
+```python
+import turtle
+
+tim = Turtle()
+tom = Turtle()
+joe = Turtle()
+
+tim.color = "green"
+tom.color = "blue"
+joe.color = "red"
+```
+- Each turtle object has a different color assigned to the turtle.color attribue. We would call this the **state** of that attribute for that turtle.
+- The state of tim's color attribute is "green" the state of tom's color attribute is "blue" the state of joe's color attribute is "red"
+- They could also be doing differeng things like one moving and one is not.
+
