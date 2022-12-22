@@ -12,4 +12,4 @@
 
 ![image](https://user-images.githubusercontent.com/52113778/209190145-f05a5766-ddf8-477d-a4ad-17bc868fae69.png)
 
-[Check out the code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-19/Day_19-TurtleRace.py)
+## [Check out the code](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-19/Day_19-TurtleRace.py)
