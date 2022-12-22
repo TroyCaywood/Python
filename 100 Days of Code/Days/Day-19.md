@@ -124,3 +124,5 @@ joe.color = "red"
 - The state of tim's color attribute is "green" the state of tom's color attribute is "blue" the state of joe's color attribute is "red"
 - They could also be doing differeng things like one moving and one is not.
 - Each new object is called an **instance**
+
+## Day 19 - [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-19/Day_19-TurtleRace.py) - Turtle Race - You pretty much walk through this one in the lesson today. I'd suggest finishing the lesson before you click.
