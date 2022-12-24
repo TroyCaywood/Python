@@ -130,3 +130,89 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+- Now we can create a way to move the snake around the screen:
+```python
+from turtle import Turtle
+POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+# Set heading directions constants
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
+class Snake:
+  def __init__(self):
+    self.segments = []
+    self.create_snake()
+    self.head = self.segments[0]
+
+  def create_snake(self):
+    for position in POSITIONS:
+      self.new_snake = Turtle("square")
+      self.new_snake.penup()
+      self.new_snake.color("white")
+      self.new_snake.goto(position)
+      self.segments.append(self.new_snake)
+
+  def move(self):
+
+      # Move each segment to the position of the segment before it and then move the first segment forwards outside of for loop to get the segments sto follow each other
+    for seg_num in range (len(self.segments) - 1, 0, -1):
+      new_x = self.segments[seg_num - 1].xcor()
+      new_y = self.segments[seg_num - 1].ycor()
+      self.segments[seg_num].goto(new_x, new_y)
+    self.head.forward(MOVE_DISTANCE)
+   
+   # Since we really only care about where the head is pointing since all the other segments follow it, we can change the heading of the head to the different direction headings 
+  def up(self):
+    if self.head.heading() != DOWN:
+      self.head.setheading(UP)
+
+  def down(self):
+    if self.head.heading() != UP:
+      self.head.setheading(DOWN)
+
+  def left(self):
+    if self.head.heading() != RIGHT:
+      self.head.setheading(LEFT)
+
+  def right(self):
+    if self.head.heading() != LEFT:
+      self.head.setheading(RIGHT)
+```
+- Then add the new methods to our main.py
+
+```python
+from turtle import Screen, Turtle
+import time
+from snake import Snake
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+snake = Snake()
+
+# Start listening for up down left and right key presses
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  
+  snake.move()
+
+
+screen.exitonclick()
+```
