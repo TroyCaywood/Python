@@ -35,6 +35,7 @@ for snake in range(3):
 
 screen.exitonclick()
 ```
+## Move the Snake
 - Now we need to get the snake segments to follow each other:
 ```python
 from turtle import Screen, Turtle
@@ -73,11 +74,9 @@ while game_is_on:
     segments[seg_num].goto(new_x, new_y)
   segments[0].forward(20)
 
-
-
-
 screen.exitonclick()
 ```
+## Create Snake class
 - Now we can clean up our code by creating a snake class in snake.py
 ```py
 from turtle import Turtle
@@ -131,7 +130,8 @@ while game_is_on:
 
 screen.exitonclick()
 ```
-- Now we can create a way to move the snake around the screen:
+## Add ability to change directions
+- Now we can create a way to change the directions the snake moves around the screen:
 ```python
 from turtle import Turtle
 POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
