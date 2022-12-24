@@ -28,3 +28,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Seventeen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-17.md) - The Quiz Project & the Benefits of OOP
 - [Day Eighteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-18.md) - Turtle and the Graphical User Interface (GUI)
 - [Day Nineteen](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-19.md) - Instances, State, and Higher Order Functions
+- [Day Twenty](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-20.md) - Build the Snake Game Part 1: Animation & Coordinates
