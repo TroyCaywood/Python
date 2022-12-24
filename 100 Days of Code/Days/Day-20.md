@@ -1,6 +1,7 @@
 # Day 20 - Build the Snake Game Part 1: Animation and Coordinates
 
 - Today we are going to start creating the classic [snake game](https://www.playsnake.org) in python
+- This day includes a lot of challenges so I suggest going through the video before reading this section.
 - To do so we will break it down into steps:
    + Create the snake body out of 3 squares on the screen lined up next to each other
    + Tell the snake to move forwards constantly
@@ -216,3 +217,6 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+- Look at that! We can move our snake around now! Neato.
+
+## No code challenge today since we walk through this code together.
