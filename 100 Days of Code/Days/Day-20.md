@@ -77,3 +77,56 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+- Now we can clean up our code by creating a snake class in snake.py
+```py
+from turtle import Turtle
+POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+
+class Snake:
+  def __init__(self):
+    self.segments = []
+    self.create_snake()
+
+  def create_snake(self):
+    for position in POSITIONS:
+      self.new_snake = Turtle("square")
+      self.new_snake.penup()
+      self.new_snake.color("white")
+      self.new_snake.goto(position)
+      self.segments.append(self.new_snake)
+
+  def move(self):
+    for seg_num in range (len(self.segments) - 1, 0, -1):
+      new_x = self.segments[seg_num - 1].xcor()
+      new_y = self.segments[seg_num - 1].ycor()
+      self.segments[seg_num].goto(new_x, new_y)
+    self.segments[0].forward(MOVE_DISTANCE)
+```
+- This makes our main.py a lot shorter and easier to read
+```python
+from turtle import Screen, Turtle
+import time
+from snake import Snake
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+snake = Snake()
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  
+  snake.move()
+
+
+screen.exitonclick()
+```
