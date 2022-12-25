@@ -177,3 +177,84 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+
+## Create Scoreboard and Keep Score
+- Now we can create a scoreboard.py file and create the Scoreboard class utilizing the Turtle.write() method
+```python
+from turtle import Turtle
+ALIGNMENT = "center"
+FONT = ("Arial", 20, "bold")
+
+class Scoreboard(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    # Set penup so we don't see the line when we move the turtle
+    self.penup()
+    # Move turtle to the top of the screen
+    self.goto(0, 270)
+    # Set color to white so we can see the text
+    self.color("white")
+    # Hide the turtle graphic
+    self.hideturtle()
+    # Set initial score to 0
+    self.score = 0
+    # Call update_scoreboard method
+    self.update_scoreboard()
+
+   # Create update_scoreboard method that writes Score: and then the current score at the top of the screen
+  def update_scoreboard(self):
+    self.write(f"Score: {self.score}", font=FONT, align=ALIGNMENT)
+  
+  # Create method to increase score by adding 1 to the score attribute and then clear the screen and write the new score
+  def increase_score(self):
+    self.score += 1
+    self.clear()
+    self.update_scoreboard()
+```
+- Now all we have to do is import our new Scoreboard class and call the increase_score method when the snake hits the food
+```python
+from turtle import Screen
+import time
+from snake import Snake
+from food import Food
+from scoreboard import Scoreboard
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+
+snake = Snake()
+food = Food()
+scoreboard= Scoreboard()
+# Intial random food
+food.refresh
+scoreboard
+
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  snake.move()
+
+  # Detect collisions with food by measuring distance from head to food
+  if snake.head.distance(food) < 15:
+    # Move food to a new location
+    food.refresh()
+    # Increase score when snake touches food
+    scoreboard.increase_score()
+
+screen.exitonclick()
+```
