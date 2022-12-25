@@ -15,7 +15,7 @@
 ## Class Inheritance
 
 - Classes can inherit behavior and appearance from other classes
-- For example, the Fish class is inheriting everything from the Animal class. To do so we call the Animal class when defining the Fish class in the parenthesis and then in the initialization for the Fish class we call `super().__init__()` the super refers to the super class which is Animal in this case and causes the Fish class to inherit all of the methods etc from Animal.
+- For example, the Fish class is inheriting everything from the Animal class. To do so we call the Animal class when defining the Fish class in the parenthesis and then in the initialization for the Fish class we call `super().__init__()` the super refers to the super class which is Animal in this case and causes the Fish class to inherit all of the methods and attributes from Animal.
 ```python
 class Animal(self):
    def __init__(self):
@@ -30,4 +30,13 @@ class Fish(Anmial):
       
    def swim(self):
       print("Moving in water.")
+      
+nemo = Fish()
+# From Fish class prints 'Moving in water.'
+nemo.swim
+# From Animal superclass prints 'Inhale, exhale.'
+nemo.breathe
+# From animal superclass prints '2'
+print(nemo.num_eyes)
 ```
+- Now we can call all the methods and attributes from Animal on a Fish object since we told fish to initialize everything from Animal.
