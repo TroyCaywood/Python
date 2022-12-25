@@ -342,3 +342,129 @@ while game_is_on:
   
 screen.exitonclick()
 ```
+## Detect Collisions with Self
+- Now we need to make a way for the game to detect when the snake hits itself when it gets too long and also create a way for the snake to grow.
+- First lets create a way to make our snake grow one segment by editing our snake.py file and creating a add_segment method and extend method
+```python
+from turtle import Turtle
+POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
+class Snake:
+  def __init__(self):
+    self.segments = []
+    self.create_snake()
+    self.head = self.segments[0]
+
+  def create_snake(self):
+    for position in POSITIONS:
+      self.add_segment(position)
+
+  # Create add_segment method
+  def add_segment(self, position):
+    self.new_snake = Turtle("square")
+    self.new_snake.penup()
+    self.new_snake.color("white")
+    self.new_snake.goto(position)
+    self.segments.append(self.new_snake)
+   
+   # Add one segment behind the last segment
+  def extend(self):
+    self.add_segment(self.segments[-1].position())
+
+  def move(self):
+    # Move each segment to the position of the segment before it and then move the first segment forwards outside of for loop to get the segments sto follow each other
+    for seg_num in range (len(self.segments) - 1, 0, -1):
+      new_x = self.segments[seg_num - 1].xcor()
+      new_y = self.segments[seg_num - 1].ycor()
+      self.segments[seg_num].goto(new_x, new_y)
+    self.head.forward(MOVE_DISTANCE)
+
+  def up(self):
+    if self.head.heading() != DOWN:
+      self.head.setheading(UP)
+
+  def down(self):
+    if self.head.heading() != UP:
+      self.head.setheading(DOWN)
+
+  def left(self):
+    if self.head.heading() != RIGHT:
+      self.head.setheading(LEFT)
+
+  def right(self):
+    if self.head.heading() != LEFT:
+      self.head.setheading(RIGHT)
+```
+- Now all we have to do is add our extend method to main.py when the snake touches food
+```python
+from turtle import Screen
+import time
+from snake import Snake
+from food import Food
+from scoreboard import Scoreboard
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+
+snake = Snake()
+food = Food()
+scoreboard= Scoreboard()
+# Intial random food
+food.refresh
+scoreboard
+
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  snake.move()
+
+  # Detect collisions with food by measuring distance from head to food
+  if snake.head.distance(food) < 15:
+    # Move food to a new location
+    food.refresh()
+    # Extend snake when it touches food
+    snake.extend()
+    scoreboard.increase_score()
+
+  # Detect collisions with the wall
+  if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    game_is_on = False
+    scoreboard.game_over()
+
+  
+screen.exitonclick()
+```
+
+## Detect Collisions with self
+- Now we need to create a way for the snake to detect collisions with itself and end the game. We'll do that by adding this to our main.py
+```python
+# Detect collisions with tail
+   # Loop through segments in snake.segments list
+  for segment in snake.segments:
+    # Skip the head segment
+    if segment == snake.head:
+      pass
+     # If the distance from the head to any segment is less than 10 pixels end the game
+    elif snake.head.distance(segment) < 10:
+      game_is_on = False
+      scoreboard.game_over()
+```
