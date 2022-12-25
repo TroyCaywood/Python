@@ -129,6 +129,7 @@ class Food(Turtle):
     self.shapesize(stretch_len=0.5, stretch_wid=0.5)
     self.color("blue")
     self.speed("fastest")
+    food.refresh()
 
   def refresh(self):
     # Create random ints for x and y positions
@@ -153,8 +154,6 @@ screen.tracer(0)
 
 snake = Snake()
 food = Food()
-# Intial random food
-food.refresh
 
 screen.listen()
 screen.onkey(snake.up, "Up")
