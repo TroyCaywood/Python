@@ -486,4 +486,4 @@ print(piano_keys[2:5])
       scoreboard.game_over()
 ```
 
-## No code challenge today. [Click Here]() to see the final code for snake game. [Click Here](https://replit.com/@TroyCaywood/Day-20-SnakeGame) to play.
+## No code challenge today. [Click Here](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-21) to see the final code for snake game. [Click Here](https://replit.com/@TroyCaywood/Day-20-SnakeGame) to play.
