@@ -9,3 +9,25 @@
    + Create a scoreboard to keep score
    + Create a game over situation when the snake hits the wall
    + Game over when the snake hits itself
+
+- To do so we will need to learn a couple of new concepts first.
+
+## Class Inheritance
+
+- Classes can inherit behavior and appearance from other classes
+- For example, the Fish class is inheriting everything from the Animal class. To do so we call the Animal class when defining the Fish class in the parenthesis and then in the initialization for the Fish class we call `super().__init__()` the super refers to the super class which is Animal in this case and causes the Fish class to inherit all of the methods etc from Animal.
+```python
+class Animal(self):
+   def __init__(self):
+      self.num_eyes = 2
+      
+   def breathe(self):
+      print("Inhale, exhale.")
+     
+class Fish(Anmial):
+   def __init__(self):
+      super().__init__()
+      
+   def swim(self):
+      print("Moving in water.")
+```
