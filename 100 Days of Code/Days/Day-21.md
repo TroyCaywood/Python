@@ -47,3 +47,13 @@ print(nemo.num_eyes)
 
 ## Detect Collisions with Food
 - Now we can get back to our snake game and work on setting up the food portion of the game.
+- First we are going to create a new food.py file and create the Food class and have it inherit everyting from the Turtle class. That way we can do things like `self.shape("circle")`
+```python
+from turtle import Turtle
+
+class Food(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    self.shape("circle")
+```
