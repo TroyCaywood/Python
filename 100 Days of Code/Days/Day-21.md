@@ -113,3 +113,68 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+- Now we need to tell the food to move every time the snake touches it. We do this using the `snake.head.distance(food)' this measures the distance from the head of our snake to the food. We'll say if the head is less than 15 pixels away then we'll move the food. First we need to create a method in our Fish class to do that. We'll just move the random x and y and goto into that method.
+
+```python
+from turtle import Turtle
+import random
+
+class Food(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    self.shape("circle")
+    self.penup()
+    # Change size to 10x10 instead of 20x20
+    self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+    self.color("blue")
+    self.speed("fastest")
+
+  def refresh(self):
+    # Create random ints for x and y positions
+    random_x = random.randint(-280, 280)
+    random_y = random.randint(-280, 280)
+    # Tell dot to go to random x and y position
+    self.goto(random_x, random_y)
+```
+and our main.py now looks like this
+```python
+from turtle import Screen
+import time
+from snake import Snake
+from food import Food
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+snake = Snake()
+food = Food()
+# Intial random food
+food.refresh
+
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  snake.move()
+
+  # Detect collisions with food by measuring distance from head to food
+  if snake.head.distance(food) < 15:
+    # Move food to a new location
+    food.refresh()
+
+
+screen.exitonclick()
+```
