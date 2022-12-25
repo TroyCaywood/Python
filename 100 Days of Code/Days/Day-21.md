@@ -258,3 +258,87 @@ while game_is_on:
 
 screen.exitonclick()
 ```
+
+## Detect Collisions with the Wall
+- Now we need to make the game end when the snake hits the wall. We'll do this by detecting when the snake head is at over 280 x or y coordinate and under -280 x or y coordinate and then we'll call a game_over method that we define in our scoreboard class.
+```python
+from turtle import Turtle
+ALIGNMENT = "center"
+FONT = ("Arial", 20, "bold")
+
+class Scoreboard(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    self.penup()
+    self.goto(0, 270)
+    self.color("white")
+    self.hideturtle()
+    self.score = 0
+    self.update_scoreboard()
+
+  def update_scoreboard(self):
+    self.write(f"Score: {self.score}", font=FONT, align=ALIGNMENT)
+  
+  def increase_score(self):
+    self.score += 1
+    self.clear()
+    self.update_scoreboard()
+
+  def game_over(self):
+    self.goto(0, 0)
+    self.write("Game OVER!", font=FONT, align=ALIGNMENT)
+```
+In our main.py
+```python
+from turtle import Screen
+import time
+from snake import Snake
+from food import Food
+from scoreboard import Scoreboard
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+
+snake = Snake()
+food = Food()
+scoreboard= Scoreboard()
+# Intial random food
+food.refresh
+scoreboard
+
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  snake.move()
+
+  # Detect collisions with food by measuring distance from head to food
+  if snake.head.distance(food) < 15:
+    # Move food to a new location
+    food.refresh()
+    scoreboard.increase_score()
+
+  # Detect collisions with the wall
+  if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    # Stop the game
+    game_is_on = False
+    # Print game over
+    scoreboard.game_over()
+
+  
+screen.exitonclick()
+```
