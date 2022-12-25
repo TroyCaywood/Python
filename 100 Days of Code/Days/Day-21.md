@@ -28,15 +28,22 @@ class Fish(Anmial):
    def __init__(self):
       super().__init__()
       
+   def breathe(self):
+      super().__init__()
+      print("Doing this underwater.")
+      
    def swim(self):
       print("Moving in water.")
       
 nemo = Fish()
 # From Fish class prints 'Moving in water.'
 nemo.swim
-# From Animal superclass prints 'Inhale, exhale.'
+# From Animal superclass prints 'Inhale, exhale.' and 'Doing this underwater.' since we modified it.
 nemo.breathe
 # From animal superclass prints '2'
 print(nemo.num_eyes)
 ```
 - Now we can call all the methods and attributes from Animal on a Fish object since we told fish to initialize everything from Animal.
+
+## Detect Collisions with Food
+- Now we can get back to our snake game and work on setting up the food portion of the game.
