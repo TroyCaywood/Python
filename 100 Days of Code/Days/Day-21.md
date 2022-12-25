@@ -468,3 +468,22 @@ screen.exitonclick()
       game_is_on = False
       scoreboard.game_over()
 ```
+## List and Tuples slicing
+- You can obtain just a section of a list or tuple by slicing them in python like this
+```python
+piano_keys = ["a", "b", "c", "d", "e", "f", "g"]
+
+print(piano_keys[2:5])
+```
+- This will print `['c', 'd', 'e']` because it will not include the ending index. You could also do `print(piano_keys[2:]' to print from index 2 to the end of the list or `print(piano_keys[:5])` and that would print everything from the beginning of the list to index 5. You can also set an increment by doing `print(piano_keys[2:5:2])` this would print everything from index 2 up to index 5 and skip every other index. So you would get `['c', 'e']` as the output. You could also get every second index by doing `print(piano_keys[::2])`. You could print the index in reverse by doing `print(piano_keys[::-1])`
+- This method works the same way for tuples
+- We can use this to simplify our tail collision detection by slicing our list from 1 to the end of the list to skip the head:
+```python
+  # Detect collisions with tail
+  for segment in snake.segments[1:]:
+    if snake.head.distance(segment) < 10:
+      game_is_on = False
+      scoreboard.game_over()
+```
+
+## No code challenge today. [Click Here]() to see the final code for snake game. [Click Here](https://replit.com/@TroyCaywood/Day-20-SnakeGame) to play.
