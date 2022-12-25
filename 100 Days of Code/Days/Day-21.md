@@ -57,3 +57,59 @@ class Food(Turtle):
     super().__init__()
     self.shape("circle")
 ```
+Now we can add the rest of the attributes and tell the food to go to a random spot on the screen
+```python
+from turtle import Turtle
+import random
+
+class Food(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    self.shape("circle")
+    self.penup()
+    # Change size to 10x10 instead of 20x20
+    self.shapesize(stretch_len=0.5, stretch_wid=0.5)
+    self.color("blue")
+    self.speed("fastest")
+    # Create random ints for x and y positions
+    random_x = random.randint(-280, 280)
+    random_y = random.randint(-280, 280)
+    # Tell dot to go to random x and y position
+    self.goto(random_x, random_y)
+  ```
+  Then we can import Food into our main.py and we don't need Turtle in main.py anymore so we can stop importing it and create a Food variable
+  ```python
+  from turtle import Screen
+import time
+from snake import Snake
+from food import Food
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Mr Snake")
+# Turn off turtle animation
+screen.tracer(0)
+
+snake = Snake()
+food = Food()
+
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left,"Left")
+screen.onkey(snake.right, "Right")
+
+game_is_on = True
+while game_is_on:
+  # Update screen outside of for loop
+  screen.update()
+  # Slow down speed
+  time.sleep(0.1)
+  
+  snake.move()
+
+
+screen.exitonclick()
+```
