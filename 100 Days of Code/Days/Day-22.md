@@ -166,3 +166,19 @@ class Ball(Turtle):
   def bounce(self):
     self.y_move *= -1
 ```
+## Detect Collisions with Paddles
+
+- Now we need a way to detect collisions with the paddles and make the ball bounce off of them. 
+- First we'll change our bounce method in the ball class to have a bounce_x and bounce_y method:
+```python
+    def bounce_y(self):
+        self.y_move *= -1
+
+    def bounce_x(self):
+        self.x_move *= -1
+```
+- Now we'll add an if statement to our while loop that checks the distance of the ball from the paddle and then calls the bounce_x method
+```python
+    if ball.distance(right_paddle) < 50 and ball.xcor() > 340 or ball.distance(left_paddle) < 50 and ball.xcor() < -340:
+        ball.bounce_x()
+```
