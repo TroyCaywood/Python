@@ -4,6 +4,7 @@ from ball import Ball
 from scoreboard import Scoreboard
 import time
 
+# Initial screen setup
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
@@ -12,11 +13,12 @@ screen.tracer(0)
 
 scoreboard = Scoreboard()
 
+# Create paddle objects and set initial position. Create ball oblect
 right_paddle = Paddle((350, 0))
 left_paddle = Paddle((-350, 0))
 ball = Ball()
 
-
+# Create key listen
 screen.listen()
 screen.onkey(right_paddle.up, "Up")
 screen.onkey(right_paddle.down, "Down")
@@ -25,7 +27,7 @@ screen.onkey(left_paddle.down, "s")
 
 game_is_on = True
 
-
+# While loop for game
 while game_is_on:
     time.sleep(ball.move_speed)
     screen.update()
