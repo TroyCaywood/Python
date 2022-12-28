@@ -179,6 +179,83 @@ class Ball(Turtle):
 ```
 - Now we'll add an if statement to our while loop that checks the distance of the ball from the paddle and then calls the bounce_x method
 ```python
-    if ball.distance(right_paddle) < 50 and ball.xcor() > 340 or ball.distance(left_paddle) < 50 and ball.xcor() < -340:
+    if ball.distance(right_paddle) < 50 and ball.xcor() > 320 or ball.distance(left_paddle) < 50 and ball.xcor() < -320:
         ball.bounce_x()
 ```
+
+- Now the ball bounces off the walls and the paddles as we expect it to
+
+# Detect When Paddles Miss
+- Now we need to detect when a paddle misses the ball, reset the ball to the center, and reverse the direction
+- First we'll define a reset_position method in the ball class
+```python
+    def reset_position(self):
+        self.goto(0, 0)
+        self.bounce_x()
+```
+- Then we'll setup an if condition for the left and right paddles in our while loop:
+```python
+    # Detect if right paddle misses
+    if ball.xcor() > 380:
+        ball.reset_position()
+
+    # Detect if left paddle misses:
+    if ball.xcor() < -380:
+        ball.reset_position()
+```
+
+## Scoreboard
+
+- Now lets setup a scoreboard class
+
+```python
+from turtle import Turtle
+ALIGNMENT = "center"
+FONT = ("Courier", 70, "bold")
+
+class Scoreboard(Turtle):
+
+    def __init__(self):
+        super().__init__()
+        self.hideturtle()
+        self.penup()
+        self.color("white")
+        # Set initial scores
+        self.left_score = 0
+        self.right_score = 0
+        self.update_scoreboard()
+
+    # Update scoareboard method. Clears screen, moves scores to correct position and write score
+    def update_scoreboard(self):
+        self.clear()
+        self.goto(-100, 200)
+        self.write(self.left_score, font=FONT, align=ALIGNMENT)
+        self.goto(100, 200)
+        self.write(self.right_score, font=FONT, align=ALIGNMENT)
+    
+    # Increase left score by one and update scoreboard
+    def l_increase_score(self):
+        self.left_score += 1
+        self.update_scoreboard()
+    
+    # Increase right score by one and update scoreboard
+    def r_increase_score(self):
+        self.right_score += 1
+        self.update_scoreboard()
+```
+- Now in our main.py lets add the increase score methods when each paddle misses
+```python
+    # Detect if right paddle misses
+    if ball.xcor() > 380:
+        scoreboard.l_increase_score()
+        ball.reset_position()
+
+    # Detect if left paddle misses:
+    if ball.xcor() < -380:
+        scoreboard.r_increase_score()
+        ball.reset_position()
+```
+- To make the game more challenging we'll increase the speed of the ball a little bit every time a paddle hits the ball we'll do this by adding a `self.move_speed = 0.1` to our ball class and then multiply the move speed by 0.9 every time it bounces. Then on `reset_position` we'll change it back to 0.1
+
+## See the completed code [here](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-22)
+
