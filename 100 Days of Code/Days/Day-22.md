@@ -70,3 +70,63 @@ class Paddle(Turtle):
 ```
 
 # Create Ball Class and Movement
+- Now lets create a ball class and have it move to the top right corner of the screen
+```python
+# Ball Class
+from turtle import Turtle
+import time
+
+class Ball(Turtle):
+
+  def __init__(self):
+    super().__init__()
+    self.penup()
+    self.shape("circle")
+    self.color("white")
+    
+  # Move to top right corner
+  def move(self):
+    new_x = self.xcor() + 10
+    new_y = self.ycor() +10
+    self.goto(new_x, new_y)
+```
+This is what main.py looks like now
+```python
+from turtle import Screen
+from paddle import Paddle
+from ball import Ball
+import time
+
+# Create screen
+screen = Screen()
+screen.setup(width=800, height=600)
+screen.bgcolor("black")
+screen.title("PingPong")
+# Turn off screen update to hide paddles moving into position
+screen.tracer(0)
+
+# Create Paddle objects and pass position arguments and create ball object
+right_paddle = Paddle((350, 0))
+left_paddle = Paddle((-350, 0))
+ball = Ball()
+
+
+
+
+# Create paddle movement keys
+screen.listen()
+screen.onkey(right_paddle.up, "Up")
+screen.onkey(right_paddle.down, "Down")
+screen.onkey(left_paddle.up, "w")
+screen.onkey(left_paddle.down, "s")
+
+game_is_on = True
+
+# Turn on screen update so we can see everything on the screen slow down time a little and move ball
+while game_is_on:
+    time.sleep(0.1)
+    screen.update()
+    ball.move()
+
+screen.exitonclick()
+```
