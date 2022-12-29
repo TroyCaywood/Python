@@ -1,0 +1,62 @@
+# Day 24 - Files, Directories and Paths
+
+- Today we will be working with files, directories and paths and using that knowledge to create a custom mail merge project
+
+## Add High Score to Snake Game
+- Let's add a high score tracker to our snake game that will stay even after you close the game.
+- We'll do this using python to create a file that the high score saves to since the high score gets reset every time we run the code otherwise
+
+### Reading and writing files in python
+- Python has a built in method to open files called `open` then once the file is open you can use the `read()` method to get the contents of the file as a string
+- Let's say we have a text file with "Hello my name is Bob." saved in it.
+- If we wanted to read this file and then print out the contents we would do this:
+
+The console would print `Hello my name is Bob.`
+```python
+with open("my_file.txt") as file:
+  contents = file.read()
+  print(contents)
+```
+- After opening a file and doing whatever you are doing with it, it's important to make sure you `close()` the file if you set the `open()` method to a variable to free up the resources that are being used to open and read that file. It's easier if you use `with open("file.txt) as variablename:` instead and then put all of your file modifications in the indented portion because it will automatically close the file that way.
+
+- You can also modify a file using python using the `write()` method. When doing this you have to make sure to set the mode on the `open()` function to "w" for write. However, this will overwrite anything in the file. If you just want to add to the file, change the mode to "a" for append.
+Here we add the string "New text." to our file:
+```python
+with open("my_file.txt", mode="a") as file:
+  file.write("\nNew text.")
+ ```
+ 
+- One thing to note, if you try to open a file that doesn't exist in write mode, python will create that file for you.
+
+- Now lets use this new knowledge to add a high score to our snake game.
+- First we'll create a file called data.txt with the number 0 in that file
+- Now in our Scoreboard class we'll read that file and set the `self.high_score` variable to the contents of that file
+```python
+class Scoreboard(Turtle):
+
+    def __init__(self):
+        super().__init__()
+        self.score = 0
+        with open("data.txt") as data:
+            self.high_score = int(data.read())
+        self.color("white")
+        self.penup()
+        self.goto(0, 270)
+        self.hideturtle()
+        self.update_scoreboard()
+```
+
+- Then to save the new high score back to the data.txt file we'll update the `reset(self)` method of the Scoreboard class
+```python
+   def reset(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+            with open("data.txt", mode="w") as data:
+                data.write(f"{self.high_score}")
+        self.score = 0
+        self.update_scoreboard()
+```
+- Now our high score stays even if you close the program completely!
+
+
+                
