@@ -29,6 +29,7 @@ with open("my_file.txt", mode="a") as file:
 - One thing to note, if you try to open a file that doesn't exist in write mode, python will create that file for you.
 
 - Now lets use this new knowledge to add a high score to our snake game.
+- We've already created a way to reset the snake and gotten rid of the game over method, but I'm not going to cover that here since it doesn't relate to what we're doing.
 - First we'll create a file called data.txt with the number 0 in that file
 - Now in our Scoreboard class we'll read that file and set the `self.high_score` variable to the contents of that file
 ```python
