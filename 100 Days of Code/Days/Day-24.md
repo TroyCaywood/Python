@@ -59,5 +59,15 @@ class Scoreboard(Turtle):
 ```
 - Now our high score stays even if you close the program completely!
 
+## Relative vs Absolute directories
+- When working with directories in python, you can use absolute or relative formats
+- An absolute directory would be the full path to the directory ex: c:\users\bob\desktop\text.txt in Windows or /users/bob/desktop/text.txt on Mac. When writing your code in python, python wants / characters rather than \ so use those even in windows directories.
+- A relative directory would be "relative" to your working directory. IE where the file you are editing in pyton currently exists.
+- So say you had a file in /users/bob/desktop/files/file.txt and your python file was in /users/bob/desktop the relative directory would be ./files/file.txt
+- If you need to access a file that is above your working directory you use ../
+- Say you had a file in /users/bob/file.txt and your python working directory is /users/bob/desktop/workdir you would use ../../file.txt as a relative path.
+
+## Day 24 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-24) - Mail Merge - Do NOT click before you attempt on your own!
+
 
                 
