@@ -147,3 +147,5 @@ print(data)
     # 2   Angela      65
 ```
 - If you wanted to save your new dataframe to a csv file you could use `data.to_csv("new_csv.csv")` to save your dataframe to a CSV file in your current working directory
+
+## Day 25 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-25) - U.S. States Game - Do not click before attempting yourself!
