@@ -38,6 +38,7 @@ while game_on:
             state_turtle.write(answer_state, font=("Arial", 8, "bold"))
 
             answer_state = screen.textinput(title=f"Score: {score}/50", prompt="What's another state's name?")
+
         else:
             answer_state = screen.textinput(title=f"Score: {score}/50", prompt="What's another state's name?")
     print(score)
