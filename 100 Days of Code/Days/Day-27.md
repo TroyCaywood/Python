@@ -139,3 +139,21 @@ print(my_car.model)
     # Nissan
     # None
 ```
+
+## Buttons, Entry, and Setting Component Options
+- tkinter options can be set in [multiple ways](https://docs.python.org/3/library/tkinter.html#handy-reference)
+- Let's change the text on our label:
+```python
+# Label
+my_label = tkinter.Label(text="I am a Label", font=("Arial", 24, "bold"))
+
+# Both of these do the same thing
+my_label["text"] = "New Text"
+my_label.config(text="New Text")
+```
+- Buttons can be created using the `.Button()` method
+```python
+# Button
+button = tkinter.Button(text="Click Me")
+button.pack()
+```
