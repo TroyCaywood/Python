@@ -91,3 +91,9 @@ for (index, row) in student_data_frame.iterrows():
     print(row.student)
     print(row.score)
 ```
+## NATO Alphabet
+
+- The [NATO Alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet) is a way of using words to describe the letters in a word as to make less mistakes over the phone or radio etc.
+- We will be using the NATO Alphabet in today's Code Challenge.
+
+## Day 26 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-26) - Do not click if you plan on trying yourself.
