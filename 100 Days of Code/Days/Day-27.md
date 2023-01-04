@@ -71,4 +71,71 @@ def add(*args):
     for n in args:
         print(n)
 ```
+- Let's look at a real example. We'll create a function that will add together any number of arguments that we input
+```python
+def add(*args):
+    print(sum(args))
 
+
+add(2,3)
+add(4, 6, 7)
+add(77, 89, 800, 88, 773, 23, 44, 55, 22, 44, 565)
+# Results would be:
+    # 5
+    # 17
+    # 2580
+```
+- The arguments in a `*args` function are stored in a tuple and can be treated as such when you are defining your function. They can be accessed by index number etc.
+
+## *kwargs - Unlimited keyword arguments
+- You can also create a function with unlimited keyword arguments using `**kwargs` which are stored in a dictionary
+```python
+def calculate(n, **kwargs):
+    print(kwargs)
+    n += kwargs["add"]
+    n *= kwargs["multiply"]
+    print(n)
+
+calculate(2, add=3, multiply=5)
+
+# This would print
+    #{'add': 3, 'multiply': 5}
+    # 25
+```
+- The above function takes 2 + 3, then takes the resulting 5 and multiplies it by 5 to get 25
+- tkinter contains many kwargs because tkinter was converted from another language
+- You can also create a class using kwargs
+```python
+class Car:
+
+    def __init__(self, **kw):
+        self.make = kw["make"]
+        self.model = kw["model"]
+
+my_car = Car(make="Nissan", model="GT-R")
+
+print(my_car.make)
+print(my_car.model)
+# This would print:
+    # Nissan
+    # GT-R
+
+```
+- When using kwargs if you don't want your code to error if no kwargs are specified, it's better to use `.get()` since it will just return `None` instead of an error
+```python
+class Car:
+
+    def __init__(self, **kw):
+        self.make = kw.get("make")
+        self.model = kw.get("model")
+        self.color = kw.get("color")
+        self.seats = kw.get("seats")
+
+my_car = Car(make="Nissan")
+
+print(my_car.make)
+print(my_car.model)
+# This would print:
+    # Nissan
+    # None
+```
