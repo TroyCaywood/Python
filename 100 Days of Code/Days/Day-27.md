@@ -45,3 +45,5 @@ my_label.pack()
 window.mainloop()
 ```
 Now our window looks like this:
+
+![image](https://user-images.githubusercontent.com/52113778/210647322-eadec500-dad0-448e-9a27-a8f9adf29778.png)
