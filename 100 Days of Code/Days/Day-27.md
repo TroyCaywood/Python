@@ -157,3 +157,6 @@ my_label.config(text="New Text")
 button = tkinter.Button(text="Click Me")
 button.pack()
 ```
+- Now we have a button on our screen! (it doesn't do anything yet)
+
+![image](https://user-images.githubusercontent.com/52113778/210665881-08c42436-d9f3-48cf-809e-aff4ab079702.png)
