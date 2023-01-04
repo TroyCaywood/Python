@@ -12,3 +12,6 @@ window = tkinter.Tk()
 # Tkinter loop that keeps window open
 window.mainloop()
 ```
+- Now we have a nice little window with not much going on in it that stays open until we close it
+ 
+![image](https://user-images.githubusercontent.com/52113778/210645765-a5273af5-113a-48ed-8cb7-0e6128c57d5f.png)
