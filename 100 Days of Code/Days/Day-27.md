@@ -20,7 +20,7 @@ window.mainloop()
 - We'll change the window's minimum size to 500x300 using `.minisize()`
 - Add a title to the titlebar using `.title()`
 - Add a label with some text by creating a `tkinter.Label()` object
-- And then we'll display that label using the packer function `.pack()` which automatically places the label on the screen and centers it
+- And then we'll display that label using the [packer](https://docs.python.org/3/library/tkinter.html#the-packer) function `.pack()` which automatically places the label on the screen and centers it
 ```python
 import tkinter
 
@@ -47,3 +47,28 @@ window.mainloop()
 Now our window looks like this:
 
 ![image](https://user-images.githubusercontent.com/52113778/210647322-eadec500-dad0-448e-9a27-a8f9adf29778.png)
+
+## Default Values
+- Some functions and methods have default arguments with pre-set values.
+- Those functions may still have required arguments
+```python
+def my_function(a=1, b=2, c-3):
+    # Do this with a
+    # Then do this wih b
+    # Then do this with c
+
+# Change value of b parameter
+my_function(b=5)
+```
+- In the above example, `my_function()` function has default values for a, b, and c.
+- We can still change the values for any of those parameters, for example `my_function(b=5)`, but the other parameters will stay as their default values `(a=1, c=3)`
+
+## *args - Unlimited Arguments
+- Functions can be created to allow any number of arguments as the input using `*args`
+- You don't have to use the word args, you can use a name of your choice, the `*` is the important part
+```python
+def add(*args):
+    for n in args:
+        print(n)
+```
+
