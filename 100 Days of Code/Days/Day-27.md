@@ -160,3 +160,50 @@ button.pack()
 - Now we have a button on our screen! (it doesn't do anything yet)
 
 ![image](https://user-images.githubusercontent.com/52113778/210665881-08c42436-d9f3-48cf-809e-aff4ab079702.png)
+
+- To make our button work, we have to create a function and pass that function to the button using `command=`
+
+```python
+# Button
+def button_clicked():
+    print("I got clicked!")
+
+
+my_button = tkinter.Button(text="Click Me", command=button_clicked)
+my_button.pack()
+
+```
+
+- Now whenever we click our button, it prints `I got clicked!` to the console.
+- Let's use what we've learned to make the label text change when we click the button using either `my_label["text"] =` or `my_label.config(text="")`
+```python
+import tkinter
+
+# tkinter main window object
+window = tkinter.Tk()
+
+# Change window title
+window.title("My First GUI Program")
+
+# Change window minimum size
+window.minsize(width=500, height=300)
+
+# Label
+
+my_label = tkinter.Label(text="I am a Label", font=("Arial", 24, "bold"))
+
+# Place label on screen and center label
+my_label.pack()
+
+# Button
+def button_clicked():
+    my_label.config(text="The button was CLICKED!")
+
+my_button = tkinter.Button(text="Click Me", command=button_clicked)
+my_button.pack()
+
+
+# Tkinter loop that keeps window open
+window.mainloop()
+```
+
