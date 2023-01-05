@@ -26,7 +26,7 @@ input_box.insert(index=0, string="0")
 
 # Create calculate function for button
 def calculate():
-    do_calc = int(input_box.get()) * 1.609
+    do_calc = float(input_box.get()) * 1.609
     # Change answer_label text to do_calc
     answer_label.config(text=f"{do_calc}")
 
