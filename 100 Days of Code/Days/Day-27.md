@@ -351,3 +351,15 @@ window.mainloop()
 - That gives us a window that looks like this:
 - 
 <img width="494" alt="image" src="https://user-images.githubusercontent.com/52113778/210693324-e7b9000d-52d4-45bb-8bea-e29914908971.png">
+
+# tkinter Layout Managers
+
+- We can arrange the layout of our tkinter objects using pack, place, and grid
+- `.pack()` mainly just stacks everything in the order it's given but it's not good for precise positioning
+- `.place()` is for precise positioning using x and y values `.place(x=0, y=0)` would place the object in the top left corner. The downside is it's very specific and if you have a lot of objects to place it can make things difficult.
+- `.grid()` divides your window into a grid of columns and rows `.grid(column=0, row=0)` would place the object in the top left corner. The grid system is relative to other objects. The easiest way of working with grid is starting with whatever you want in the top left corner and going from there.
+- If we wanted an object to the right and down from our top left object we would do `.grid(row=1, column=1)`
+- The next position down and over to the right would be `.grid(column=2, row=2)` and so on.
+- You cannot use pack and grid on the same object. It's one or the other.
+- You can also add padding (extra space) around objects using `.config(padx=10, pady=10)`. This would add 10 padding around the object.
+- Padding can be used to space out your objects a bit.
