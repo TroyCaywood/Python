@@ -221,4 +221,6 @@ my_input.pack()
 <img width="497" alt="image" src="https://user-images.githubusercontent.com/52113778/210691566-b0bafdcd-a515-4c2f-95ab-1dd8a88f1d0d.png">
 
 - Now we'll change the label text every time we enter something in the text box and click the button using the `.get()` method
-- 
+
+
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/52113778/210692174-1c130c3f-afe2-4031-9423-d0df8f090a6d.png">
