@@ -363,3 +363,5 @@ window.mainloop()
 - You cannot use pack and grid on the same object. It's one or the other.
 - You can also add padding (extra space) around objects using `.config(padx=10, pady=10)`. This would add 10 padding around the object.
 - Padding can be used to space out your objects a bit.
+
+## Day 27 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-27) - Miles to KM Converter. Do not click before attempting yourself!
