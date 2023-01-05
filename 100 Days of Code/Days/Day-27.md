@@ -206,4 +206,8 @@ my_button.pack()
 # Tkinter loop that keeps window open
 window.mainloop()
 ```
+- Now our label text changes when we click the button!
+
+<img width="497" alt="AFEDEF7E-50DB-4BD9-89A8-3A61DFFAD75F" src="https://user-images.githubusercontent.com/52113778/210691075-37dbfd79-1ed8-446f-9c6c-4279138b00e3.png">
+
 
