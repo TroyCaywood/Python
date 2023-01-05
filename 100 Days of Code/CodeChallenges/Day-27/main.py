@@ -1,9 +1,10 @@
 import tkinter
 
-# Create window and min size plus padding
+# Create window and min size, padding, and title
 window = tkinter.Tk()
 window.minsize(width=200, height=100)
 window.config(padx=10, pady=10)
+window.title("Miles to KM")
 
 # Create labels
 equal_label = tkinter.Label(text="is equal to:")
