@@ -348,3 +348,6 @@ listbox.bind("<<ListboxSelect>>", listbox_used)
 listbox.pack()
 window.mainloop()
 ```
+- That gives us a window that looks like this:
+- 
+<img width="494" alt="image" src="https://user-images.githubusercontent.com/52113778/210693324-e7b9000d-52d4-45bb-8bea-e29914908971.png">
