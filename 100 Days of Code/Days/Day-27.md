@@ -211,5 +211,14 @@ window.mainloop()
 <img width="497" alt="AFEDEF7E-50DB-4BD9-89A8-3A61DFFAD75F" src="https://user-images.githubusercontent.com/52113778/210691075-37dbfd79-1ed8-446f-9c6c-4279138b00e3.png">
 
 - We can also collect user input in our GUI using `tkinter.Entry()`
+```python
+# Input
+my_input = tkinter.Entry()
+my_input.pack()
+```
+- Now we have an input field!
 
 <img width="497" alt="image" src="https://user-images.githubusercontent.com/52113778/210691566-b0bafdcd-a515-4c2f-95ab-1dd8a88f1d0d.png">
+
+- Now we'll change the label text every time we enter something in the text box and click the button using the `.get()` method
+- 
