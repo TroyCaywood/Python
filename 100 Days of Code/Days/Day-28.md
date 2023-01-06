@@ -129,3 +129,36 @@ def count_down(count):
 ```
 
 ![python_8uoyQxAeJq](https://user-images.githubusercontent.com/52113778/211106000-307b09d1-7a21-4d90-9690-7d57ef760aa4.gif)
+
+- The counter looks mostly correct now, but we need to fix the timer so it says 5:00 instead of 5:0
+
+## Dynamic Typing
+- In Python we can set variables to strings or integers or booleans etc, but we can also dynamically change them
+- For example
+```python
+a = 5
+print(a)
+print(type(a))
+# 5 would print
+# a is type int
+
+a = "hello"
+print(a)
+print(type(a))
+# Hello would print
+# a is type string
+```
+
+- Using that knowlege, we can dynamically change our seconds from an integer to a string when `count_sec` is 0
+```python
+def count_down(count):
+    # Math.floor returns largest whole number
+    count_min = math.floor(count / 60)
+    count_sec = count % 60
+    if count_sec == 0:
+        count_sec = "00"
+
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
+    if count > 0:
+        window.after(1000, count_down, count - 1)
+```
