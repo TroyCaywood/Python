@@ -107,3 +107,23 @@ start_button = Button(text="Start", font=(FONT_NAME, 10, "bold"), command=start_
 
 ![python_25FjZB6WSO](https://user-images.githubusercontent.com/52113778/211104167-b7fcc00f-aee6-4f64-a2a3-80eb952f9d20.gif)
 
+- We need to change our timer so it counts down from 5 minutes instead of 5 seconds and displays minutes and seconds while counting down
+- We'll do this by taking 5 * 60 in the count, then we'll figure out the minutes and seconds by creating two variables
+- `count_min = math.floor(count / 60)` the `math.floor()` rounds down to the largest whole number
+- `count_sec = count % 60' this will give us the remainder after dividing by 60 which would be the seconds
+- Then we'll change our timer text to an f-string to show our new variables every 1000 milliseconds
+```python
+def start_timer():
+    count_down(5 * 60)
+
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+def count_down(count):
+    # Math.floor returns largest whole number
+    count_min = math.floor(count / 60)
+    count_sec = count % 60
+
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
+    if count > 0:
+        window.after(1000, count_down, count - 1)
+
+```
