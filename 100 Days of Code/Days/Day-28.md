@@ -103,5 +103,7 @@ def count_down(count):
 start_button = Button(text="Start", font=(FONT_NAME, 10, "bold"), command=start_timer)
 
 ```
+- Now our timer counts down from 5 to 0 when we hit start
+
 ![python_25FjZB6WSO](https://user-images.githubusercontent.com/52113778/211104167-b7fcc00f-aee6-4f64-a2a3-80eb952f9d20.gif)
 
