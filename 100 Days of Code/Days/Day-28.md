@@ -162,3 +162,6 @@ def count_down(count):
     if count > 0:
         window.after(1000, count_down, count - 1)
 ```
+- Now our timer looks correct when counting down!
+
+![python_vSPANGkxvK](https://user-images.githubusercontent.com/52113778/211107574-0f7055d4-ad2d-40bb-a3e7-5a360fba3c31.gif)
