@@ -43,3 +43,6 @@ canvas.pack()
 window.mainloop()
 ```
 - Now we have a nice picture of a tomato when we run our program!
+
+![image](https://user-images.githubusercontent.com/52113778/211095820-283e60a2-71e4-4633-a200-3a5e9ecae7f2.png)
+
