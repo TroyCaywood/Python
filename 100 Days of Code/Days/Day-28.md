@@ -127,3 +127,5 @@ def count_down(count):
         window.after(1000, count_down, count - 1)
 
 ```
+
+![python_8uoyQxAeJq](https://user-images.githubusercontent.com/52113778/211106000-307b09d1-7a21-4d90-9690-7d57ef760aa4.gif)
