@@ -53,4 +53,7 @@ window.mainloop()
 
 - Now lets change our background to the YELLOW constant using `bg=YELLOW` on both `window.config()' and `Canvas()`
 
+![image](https://user-images.githubusercontent.com/52113778/211097471-1c20db6a-6a06-470c-ab11-96a5b853076c.png)
+
+
 
