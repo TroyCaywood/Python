@@ -39,9 +39,5 @@ reset_button.grid(column=2, row=2)
 checkmark = Label(text="✓", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 15, "bold"))
 checkmark.grid(column=1, row=3)
 
-# grid
-# ✓
-# fg=Green
 window.mainloop()
 
-# 3(2) columns 4(3) rows
