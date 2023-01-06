@@ -48,3 +48,5 @@ window.mainloop()
 
 - Let's add the starting text for our timer using `canvas.create_text(103, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))`
 - This will create our text at x=103 y=130 with the text 00:00 using our courier font at 35 in bold.
+
+![image](https://user-images.githubusercontent.com/52113778/211096659-58e28a9a-0a50-4be3-952c-e7da9a39fb97.png)
