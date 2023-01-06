@@ -165,3 +165,41 @@ def count_down(count):
 - Now our timer looks correct when counting down!
 
 ![python_vSPANGkxvK](https://user-images.githubusercontent.com/52113778/211107574-0f7055d4-ad2d-40bb-a3e7-5a360fba3c31.gif)
+
+# Changing Timer
+- Now we need to change the timer based on the number of repetitions
+- We'll do this by adding a global variable called reps and increasing it every time `start_timer()` is called
+- Then we'll use modulo to test if the reps divides cleanly by 2 then we'll take a short break. If it is equal to 8 we'll take a long break, otherwise it will do the full 25 min timer.
+```python
+reps = 0
+# ---------------------------- TIMER RESET ------------------------------- # 
+
+# ---------------------------- TIMER MECHANISM ------------------------------- # 
+def start_timer():
+    global reps
+    reps += 1
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+
+    if reps % 8 == 0:
+        count_down(long_break_sec)
+    elif reps % 2 == 0:
+        count_down(short_break_sec)
+    else:
+        count_down(work_sec)
+
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+def count_down(count):
+    count_min = math.floor(count / 60)
+    count_sec = count % 60
+    if count_sec < 10:
+        count_sec = f"0{count_sec}"
+
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
+    if count > 0:
+        window.after(1000, count_down, count - 1)
+    # Once timer reaches 0 call start_timer() again    
+    else:
+        start_timer()
+```
