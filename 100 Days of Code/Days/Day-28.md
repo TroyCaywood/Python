@@ -203,3 +203,37 @@ def count_down(count):
     else:
         start_timer()
 ```
+
+- Now let's deal with adding a checkmark for every pomodoro completed, and setup a reset function that resets the program back to 00:00
+- First we'll remove the `text=` argument from our checkmark object and we'll create a marks variable in the `start_timer()` that is set to an empty string
+- Then we'll divide the current sessions by 2 so for every two sessions we will add a checkmark to the marks variable
+- Then we assign the marks variable to `checkmark.config(text=marks)` to apply it to our checkmark object
+```python
+    # Once timer reaches 0 call start_timer() again
+    else:
+        start_timer()
+        marks = ""
+        work_sessions = math.floor(reps/2)
+        for _ in range(work_sessions):
+            marks += "✓"
+        checkmark.config(text=marks)
+```
+
+- To reset everything to default we'll call the global reps variable and then set it to 0
+- Now we'll set `window.after_cancel(timer)` to stop the `window.after()` timer.
+- Then we'll set `timer_label.config(text="timer")`
+- Then we'll change `checkmark.config("text="")` so we have a blank string again
+- Now we just have to assign `command=reset_timer` to our reset button to make the button function
+```python
+def reset_timer():
+    global reps
+    reps = 0
+    window.after_cancel(timer)
+    timer_label.config(text="Timer")
+    canvas.itemconfig(timer_text, text="00:00")
+    checkmark.config(text="")
+    
+```
+- Now we have a functional pomodoro timer!
+
+## Day 28 - [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-28) - Pomodoro Timer - This was all covered in the videos, but you can take a look at the final code

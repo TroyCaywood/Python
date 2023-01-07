@@ -15,11 +15,12 @@ timer = None
 
 def reset_timer():
     global reps
+    reps = 0
     window.after_cancel(timer)
     timer_label.config(text="Timer")
     canvas.itemconfig(timer_text, text="00:00")
     checkmark.config(text="")
-    reps = 0
+
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
