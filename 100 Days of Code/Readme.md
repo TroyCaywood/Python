@@ -36,3 +36,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Twenty Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-25.md) - Working with CSV File and the Pandas Library
 - [Day Twenty Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-26.md) - List Comprehension and the NATO Alphabet
 - [Day Twenty Seven](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-27.md) - Tkinter, *args, **kwargs and Creating GUI Programs
+- [Day Twenty Eight](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-28) - Tkinter, Dynamic Typing, and the Pomodoro GUI Application
