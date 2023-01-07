@@ -1,5 +1,6 @@
 # Day 28 - Tkinter, Dynamic Typing, and the Pomodoro GUI Application
 
+- I would encourage you to go through all of the videos before reading this page
 - Today we will be building a [Pomodoro timer](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 - In order to do that we will use tkinter to build our interface
 
