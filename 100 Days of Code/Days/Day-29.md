@@ -61,5 +61,7 @@ add_button.grid(column=1, row=4, columnspan=2)
 
 window.mainloop()
 ```
-- 
+- Now we have our interface setup and looking pretty decent
+
+![image](https://user-images.githubusercontent.com/52113778/211211013-80a29be2-564c-41d2-a637-32ea4fbe413b.png)
 
