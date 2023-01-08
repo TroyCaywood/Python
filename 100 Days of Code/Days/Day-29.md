@@ -65,3 +65,4 @@ window.mainloop()
 
 ![image](https://user-images.githubusercontent.com/52113778/211211013-80a29be2-564c-41d2-a637-32ea4fbe413b.png)
 
+- Let's change the program so the cursor is automatically in the website entry field when it is launched by using the `.focus()` function
