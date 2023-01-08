@@ -33,12 +33,13 @@ password_label.grid(column=0, row=3)
 
 website_entry = Entry(width=35)
 website_entry.grid(column=1, row=1, columnspan=2)
-website_entry.focus()
+# website_entry.focus()
 
 email_user_entry = Entry(width=35)
 email_user_entry.grid(column=1, row=2, columnspan=2)
 email_user_entry.insert(0, "@gmail.com")
-
+email_user_entry.icursor(0)
+email_user_entry.focus()
 
 password_entry = Entry(width=18)
 password_entry.grid(column=1, row=3)
