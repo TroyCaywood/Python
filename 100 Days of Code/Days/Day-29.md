@@ -137,3 +137,8 @@ def generate_password():
     # Insert into password field
     password_entry.insert(0, f"{password}")
 ```
+- Now we have a completely local password manager that saves our random passwords to a file called data.txt!
+
+![image](https://user-images.githubusercontent.com/52113778/211237236-48d61788-88e5-4607-9389-076e0ddc097b.png)
+
+## Day 29 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-29) - Password Manager - We did this together today, but check out the final code here.
