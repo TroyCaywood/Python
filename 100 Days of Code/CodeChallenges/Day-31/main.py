@@ -13,7 +13,8 @@ print(data_dict)
 
 def random_word():
     canvas.delete()
-    word = random.choice(data_dict)
+    word_list = random.choice(data_dict.)
+    word = random.choice(data_dict[word_list])
     canvas.create_text(400, 263, text=f"{word}", font=("Ariel", 40, "italic"))
 
 window = tk.Tk()
