@@ -38,3 +38,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Twenty Seven](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-27.md) - Tkinter, *args, **kwargs and Creating GUI Programs
 - [Day Twenty Eight](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-28.md) - Tkinter, Dynamic Typing, and the Pomodoro GUI Application
 - [Day Twenty Nine](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-29.md) - Building a Password Manager GUI App with Tkinter
+- [Day Thirty](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-30.md) - Errors, Exceptions, and JSON Data: Improving the Password Manager Program
