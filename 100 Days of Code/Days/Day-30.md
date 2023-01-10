@@ -213,3 +213,5 @@ search_button.grid(column=2, row=1)
 
 - We could have technically handled the website not being found with an exception, but it's better to do things with if/else if we can and leave exceptions for things that probably won't happen often
 - Only use exception handling when you don't have an easy alternative
+
+## Day 30 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-30) - No challenge today, but here is the final code for the password manager
