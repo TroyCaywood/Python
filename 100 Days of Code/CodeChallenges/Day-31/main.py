@@ -5,7 +5,11 @@ import random
 import time
 
 BACKGROUND_COLOR = "#B1DDC6"
-data = pandas.read_csv("data/french_words.csv")
+try:
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    data = pandas.read_csv("data/french_words.csv")
+
 data_frame = pandas.DataFrame(data)
 data_dict = data_frame.to_dict(orient="records")
 random_word = {}
@@ -23,6 +27,14 @@ def flip_card():
     canvas.itemconfig(current_canvas, image=card_back_image)
     canvas.itemconfig(card_title, text="English", fill="white")
     canvas.itemconfig(card_word, text=random_word["English"], fill="white")
+
+def learned_word():
+    data_dict.remove(random_word)
+    data_dict_df = pandas.DataFrame(data_dict)
+    data_dict_df.to_csv("data/words_to_learn.csv", index=0)
+    new_card()
+
+
 
 window = Tk()
 # window.minsize(width=800, height=526)
@@ -48,7 +60,7 @@ x_button = Button(image=x_image, highlightthickness=0, command=new_card)
 x_button.grid(column=0, row=1)
 
 check_image = PhotoImage(file="images/right.png")
-check_button = Button(image=check_image, highlightthickness=0, command=new_card)
+check_button = Button(image=check_image, highlightthickness=0, command=learned_word)
 check_button.grid(column=1, row=1)
 
 new_card()
