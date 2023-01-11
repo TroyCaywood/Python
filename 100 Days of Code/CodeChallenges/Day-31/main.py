@@ -3,6 +3,7 @@ import pandas
 import random
 
 BACKGROUND_COLOR = "#B1DDC6"
+random_word = {}
 
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
@@ -11,7 +12,8 @@ except FileNotFoundError:
 
 data_frame = pandas.DataFrame(data)
 data_dict = data_frame.to_dict(orient="records")
-random_word = {}
+
+
 
 
 def new_card():
