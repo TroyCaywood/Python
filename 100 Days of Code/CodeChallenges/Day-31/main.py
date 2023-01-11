@@ -1,10 +1,9 @@
-#import tkinter as tk
 from tkinter import *
 import pandas
 import random
-import time
 
 BACKGROUND_COLOR = "#B1DDC6"
+
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
@@ -13,6 +12,7 @@ except FileNotFoundError:
 data_frame = pandas.DataFrame(data)
 data_dict = data_frame.to_dict(orient="records")
 random_word = {}
+
 
 def new_card():
     global random_word, flip_timer
@@ -23,21 +23,21 @@ def new_card():
     canvas.itemconfig(card_word, text=random_word["French"], fill="black")
     flip_timer = window.after(3000, func=flip_card)
 
+
 def flip_card():
     canvas.itemconfig(current_canvas, image=card_back_image)
     canvas.itemconfig(card_title, text="English", fill="white")
     canvas.itemconfig(card_word, text=random_word["English"], fill="white")
 
+
 def learned_word():
     data_dict.remove(random_word)
     data_dict_df = pandas.DataFrame(data_dict)
-    data_dict_df.to_csv("data/words_to_learn.csv", index=0)
+    data_dict_df.to_csv("data/words_to_learn.csv", index=False)
     new_card()
 
 
-
 window = Tk()
-# window.minsize(width=800, height=526)
 window.title("Flashy")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
