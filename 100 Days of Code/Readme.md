@@ -40,3 +40,6 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Twenty Nine](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-29.md) - Building a Password Manager GUI App with Tkinter
 - [Day Thirty](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-30.md) - Errors, Exceptions, and JSON Data: Improving the Password Manager Program
 - [Day Thirty One](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-31.md) - Flash Card App Capstone Project
+
+## Intermediate+ Section
+- [Day Thirty Two](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-32.md) - Send email (smtplib) & Manage Dates (datetime)
