@@ -1,4 +1,3 @@
-##################### Normal Starting Project ######################
 import datetime as dt
 import smtplib
 import random
