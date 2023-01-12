@@ -91,3 +91,5 @@ if current_day == 2:
             )
 
 ```
+
+## Day 32 [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-32/main.py) - Automated Birthday Wisher - Do not click before attempting yourself!
