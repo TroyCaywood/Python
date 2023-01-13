@@ -78,3 +78,41 @@ iss_position = (longitude, latitude)
 
 print(iss_position)
 ```
+#### API Parameters
+
+- API parameters allow you to give an input when you are making your API request so you can get different pieces of data back depending on your input
+- To send parameters with an API request you add the `params=` argument to the `requests.get()` method
+- The parameters you add must be stored in a dictionary
+- Let's use that info to get our current location's sunrise and sunset times
+```python
+# from tkinter import *
+import requests
+from datetime import datetime
+
+MY_LAT = 39.099789
+MY_LONG = -94.578560
+
+# Parameters dictionary for API request
+parameters = {
+    "lat": MY_LAT,
+    "lng": MY_LONG,
+    "formatted": 0
+}
+
+# API Request passing parameters
+response = requests.get(url="https://api.sunrise-sunset.org/json", params=parameters)
+response.raise_for_status()
+data = response.json()
+
+# Get sunrise and sunset hour by splitting data
+sunrise = data["results"]["sunrise"].split("T")[1].split(":")[0]
+sunset = data["results"]["sunset"].split("T")[1].split(":")[0]
+
+print(sunrise)
+print(sunset)
+
+# Get the current hour
+time_now = datetime.now().hour
+print(time_now)
+
+```
