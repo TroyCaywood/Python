@@ -69,3 +69,8 @@ class QuizInterface:
         self.window.mainloop()
 
 ```
+- Now we create a QuizInterface object in main.py and when we run our program we have a nice interface to work with
+
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/52113778/212449353-144c9cf8-9183-447c-bdc7-418f8afa7847.png">
+
+        self.window.mainloop()
