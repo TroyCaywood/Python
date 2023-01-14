@@ -73,4 +73,3 @@ class QuizInterface:
 
 <img width="335" alt="image" src="https://user-images.githubusercontent.com/52113778/212449353-144c9cf8-9183-447c-bdc7-418f8afa7847.png">
 
-        self.window.mainloop()
