@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e3bd696-8eb4-4556-83ba-017e9bc9f058" name="Changes" comment="Remove hint text">
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/images/false.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/images/true.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/question_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/quiz_brain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/100 Days of Code/Days/Day-34.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/100 Days of Code/CodeChallenges/Day-34/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100 Days of Code/Days/Day-34.md" beforeDir="false" afterPath="$PROJECT_DIR$/100 Days of Code/Days/Day-34.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
