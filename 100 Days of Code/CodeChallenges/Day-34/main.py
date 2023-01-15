@@ -12,9 +12,11 @@ for question in question_data:
     question_bank.append(new_question)
 
 
-quiz = QuizBrain(question_bank)
-quiz_ui = QuizInterface()
 
+quiz = QuizBrain(question_bank)
+quiz_ui = QuizInterface(quiz)
+
+# quiz_ui.canvas.itemconfig(quiz_ui.canvas_question, text=f"{question_text}")
 while quiz.still_has_questions():
     quiz.next_question()
 
