@@ -181,8 +181,9 @@ def police_check(age: int) -> bool:
             self.canvas.itemconfig(self.question_text, text=q_text)
         else:
             self.canvas.itemconfig(self.question_text, text=f"You have reached the end of the quiz."
+                                                       f"\nYour Score: {self.quiz.score}")
             self.true_button.config(state="disabled")
-            self.false_button.config(state="disabled")                                              f"\nYour Score: {self.quiz.score}")
+            self.false_button.config(state="disabled")   
 ```
 
 ## Day 34 - [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-34) - Today was walked through in the videos, but here is the final code if you want to have a look.
