@@ -132,3 +132,4 @@ if will_rain:
 - If you export your auth_token and api_key on python anywhere, you'll need to add export AUTH_TOKEN=20938402398(your token); export API_KEY=20938430298(your key); python3 main.py to the task for it to work correctly
 - This is just one example of APIs to play with. [Here](https://apilist.fun) is a list of other APIs to try
 
+## Day 35 - No code challenge today. [Here](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-35/main.py) is the final code for today's class.
