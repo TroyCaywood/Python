@@ -49,4 +49,4 @@ response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 print(response.text)
 ```
 - Now if we go to https://pixe.la/v1/users/my_username/graphs/graph1.html we can see that our graph was created
-
+- Next we'll update our graph by [posting](https://docs.pixe.la/entry/post-pixel) a pixel
