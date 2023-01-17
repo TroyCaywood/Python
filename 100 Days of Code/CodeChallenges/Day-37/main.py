@@ -57,5 +57,3 @@ pixel_data = {
 
 pixel_request = requests.post(url=pixelpost_endpoint, headers=headers, json=pixel_data)
 print(pixel_request.text)
-
-dt.datetime.strftime()
