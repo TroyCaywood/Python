@@ -1,7 +1,6 @@
 import requests
 from twilio.rest import Client
 
-
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
@@ -14,7 +13,6 @@ alpha_parameters = {
     "symbol": STOCK_NAME,
     "apikey": alphavantage_api_key
 }
-
 
 # Get stock data from alphavantage and save the Time Series (Daily) key as stock_data
 response = requests.get(url=STOCK_ENDPOINT, params=alpha_parameters)
@@ -65,7 +63,9 @@ if abs(percent_diff) > .8:
     first_3_articles = articles[:3]
 
     # Create new list with just headline and description from first 3 articles
-    headlines = [f"{STOCK_NAME}: {up_down}{percent_diff}%\nHeadline: {article['title']}.\nBrief: {article['description']}" for article in first_3_articles]
+    headlines = [
+        f"{STOCK_NAME}: {up_down}{percent_diff}%\nHeadline: {article['title']}.\nBrief: {article['description']}" for
+        article in first_3_articles]
 
     # Twilio
     account_sid = "1243124125"
