@@ -35,23 +35,16 @@ pixela_endpoint = "https://pixe.la/v1/users"
 #
 # response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 # print(response.text)
-time_now = dt.datetime.now()
-year = time_now.year
-month = time_now.month
-if month < 10:
-    month = "0" + str(time_now.month)
-day = time_now.day
-if day < 10:
-    day = "0" + str(time_now.day)
+time = dt.datetime.now()
+time_string = time.strftime("%Y%m%d")
+print(time_string)
 
-time_combined = str(year) + str(month) + str(day)
-print(time_combined)
 pixelpost_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
 headers = {
     "X-USER-TOKEN": TOKEN
 }
 pixel_data = {
-    "date": time_combined,
+    "date": time_string,
     "quantity": "1.5",
 }
 
