@@ -46,3 +46,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Thirty Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-33.md) - API Endpoints & API Parameters - ISS Overhead Notifier
 - [Day Thirty Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-34.md) - API Practice - Creating a GUI Quiz App
 - [Day Thirty Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-35.md) - Keys, Authentication, & Environment Variables: Send SMS
+- [Day Thirty Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-36.md) - Stock Trading News Alert Project
