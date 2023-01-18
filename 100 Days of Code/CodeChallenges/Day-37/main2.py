@@ -96,7 +96,6 @@ date_label.grid(column=0, row=2)
 
 date = tkcalendar.Calendar(date_pattern="ymmdd")
 date.grid(column=1, row=2, rowspan=2)
-# date.config(padding=1)
 
 hours_label = tk.Label(text="How many hours did you study: ")
 hours_label.grid(column=0, row=0)
