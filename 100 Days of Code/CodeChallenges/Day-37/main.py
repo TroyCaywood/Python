@@ -1,5 +1,8 @@
 import requests
 import datetime as dt
+import tkinter as tk
+
+
 
 USERNAME = "my_user"
 TOKEN = "12379872197"
@@ -16,9 +19,9 @@ user_params = {
     "notMinor": "yes"
 }
 
-response = requests.post(url=pixela_endpoint, json=user_params)
-response.raise_for_status()
-print(response.text)
+# response = requests.post(url=pixela_endpoint, json=user_params)
+# response.raise_for_status()
+# print(response.text)
 
 
 #-----------------CREATE GRAPH-----------------#
@@ -74,5 +77,5 @@ pixela_update_json = {
 
 pixel_delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{time_string}"
 
-# pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
-# print(pixel_delete_request.text)
+pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
+print(pixel_delete_request.text)
