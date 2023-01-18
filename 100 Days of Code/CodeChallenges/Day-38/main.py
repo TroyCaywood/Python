@@ -9,12 +9,14 @@ USER_ID = os.environ["USER_ID"]
 BEARER_TOKEN = os.environ["BEARER_TOKEN"]
 SHEET_ENDPOINT = os.environ["SHEET_ENDPOINT"]
 
+# Headers for nutritionix post
 HEADERS = {
     "x-app-key": APP_KEY,
     "x-app-id": APP_ID,
     "x-remote-user-id": USER_ID
 }
 
+# JSON for nutritionix post
 exercise_json = {
     "query": f"{input('What exercises did you do today and for how long? ')}",
     "gender": "male",
