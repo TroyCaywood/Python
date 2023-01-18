@@ -1,5 +1,3 @@
-import tkinter.messagebox
-
 import requests
 import datetime as dt
 import tkinter as tk
@@ -27,7 +25,6 @@ user_params = {
 
 
 #-----------------CREATE GRAPH-----------------#
-
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
 
@@ -68,6 +65,7 @@ def post_pixel():
 
 #-----------------UPDATE PIXEL-----------------#
 
+
 def update_pixel():
 
     pixel_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{date.get_date()}"
@@ -80,11 +78,13 @@ def update_pixel():
 
 #-----------------DELETE PIXEL-----------------#
 
+
 def delete_pixel():
     pixel_delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{date.get_date()}"
 
     pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
     messagebox.showinfo(title="Done", message=pixel_delete_request.text)
+
 
 window = tk.Tk()
 window.title("Pixela Updater")
@@ -124,8 +124,6 @@ def pixela_button():
     elif radio_select.get() == 3:
         delete_pixel()
 
-def test():
-    print(date.get_date())
 
 update_button = tk.Button(text="Update/Create Pixel", command=pixela_button)
 update_button.grid(column=1, row=5)
