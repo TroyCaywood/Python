@@ -92,3 +92,4 @@ pixel_delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{time_s
 pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
 print(pixel_delete_request.text)
 ```
+## Day 37 - [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-37/main.py) - Pixela Habit Tracker - don't click until you've finished the lesson
