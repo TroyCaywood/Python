@@ -50,3 +50,38 @@ print(response.text)
 ```
 - Now if we go to https://pixe.la/v1/users/my_username/graphs/graph1.html we can see that our graph was created
 - Next we'll update our graph by [posting](https://docs.pixe.la/entry/post-pixel) a pixel
+- Looking at the documentation, one of the requirements is a string with the date for your pixel post. To get the current date as a string we'll import `datetime`, then we'll set a variable to `datetime.now()` and finally we'll set another variable to `thatvariable.strftime("%Y%m%d")` to get the current date as a string
+```python
+import datetime as dt
+
+# Get current date and time and then get format current date as a string
+time = dt.datetime.now()
+time_string = time.strftime("%Y%m%d")
+print(time_string)
+
+# Set pixel post endpoint url
+pixel_post_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}"
+
+headers = {
+    "X-USER-TOKEN": TOKEN
+}
+# JSON data for post
+pixel_data = {
+    "date": time_string,
+    "quantity": "1.5",
+}
+# Post request
+pixel_request = requests.post(url=pixel_post_endpoint, headers=headers, json=pixel_data)
+print(pixel_request.text)
+```
+
+- Doing a put (update) is fairly simple
+```python
+pixel_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{time_string}"
+pixela_update_json = {
+    "quantity": "2.5"
+}
+
+pixel_update_request = requests.put(url=pixel_update_endpoint, headers=headers, json=pixela_update_json)
+print(pixel_update_request.text)
+```
