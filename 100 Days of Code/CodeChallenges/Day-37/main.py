@@ -38,8 +38,8 @@ headers = {
     "X-USER-TOKEN": TOKEN
 }
 
-response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
-print(response.text)
+# response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)
 
 
 #-----------------POST PIXEL-----------------#
@@ -54,7 +54,7 @@ headers = {
 }
 pixel_data = {
     "date": time_string,
-    "quantity": "2.5",
+    "quantity": input("How long did you study today?"),
 }
 
 pixel_request = requests.post(url=pixel_post_endpoint, headers=headers, json=pixel_data)
@@ -67,12 +67,12 @@ pixela_update_json = {
     "quantity": "2.5"
 }
 
-pixel_update_request = requests.put(url=pixel_update_endpoint, headers=headers, json=pixela_update_json)
-print(pixel_update_request.text)
+# pixel_update_request = requests.put(url=pixel_update_endpoint, headers=headers, json=pixela_update_json)
+# print(pixel_update_request.text)
 
 #-----------------DELETE PIXEL-----------------#
 
 pixel_delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{time_string}"
 
-pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
-print(pixel_delete_request.text)
+# pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
+# print(pixel_delete_request.text)

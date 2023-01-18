@@ -85,3 +85,10 @@ pixela_update_json = {
 pixel_update_request = requests.put(url=pixel_update_endpoint, headers=headers, json=pixela_update_json)
 print(pixel_update_request.text)
 ```
+- A delete on pixela is even more simple since all we need is the endpoint and headers
+```python
+pixel_delete_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{time_string}"
+
+pixel_delete_request = requests.delete(url=pixel_delete_endpoint, headers=headers)
+print(pixel_delete_request.text)
+```
