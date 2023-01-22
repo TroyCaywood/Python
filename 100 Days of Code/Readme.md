@@ -49,3 +49,5 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Thirty Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-36.md) - Stock Trading News Alert Project
 - [Day Thirty Seven](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-37.md) - Habit Tracking Project: API Post Requests & Handlers
 - [Day Thirty Eight](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-38.md) - Workout Tracking Using Google Sheets
+- [Day Thirty Nine](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-39.md) - Capstone Part 1: Flight Deal Finder
+- [Day Fourty](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-40.md) - Capstone Part 2: Flight Club
