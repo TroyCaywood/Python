@@ -40,6 +40,6 @@ for destination in sheet_data:
         if flight.stop_overs > 0:
             message += f"\nFlight has {flight.stop_overs} stop over, via {flight.via_city}."
 
-        link = f"https://www.google.co.uk/flights?hl=en#flt={flight.origin_airport}.{flight.destination_airport}.{flight.out_date}*{flight.destination_airport}.{flight.origin_airport}.{flight.return_date}"
+        link = f"https://www.google.com/flights?hl=en#flt={flight.origin_airport}.{flight.destination_airport}.{flight.out_date}*{flight.destination_airport}.{flight.origin_airport}.{flight.return_date}"
 
         notification_manager.send_emails(emails, message, link)
