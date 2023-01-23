@@ -189,6 +189,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.data_manager" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.flight_search" />
