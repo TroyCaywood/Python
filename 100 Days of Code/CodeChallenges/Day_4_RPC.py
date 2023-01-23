@@ -52,4 +52,5 @@ else:
   elif cpu_choice == 0 and player_choice == 2:
     print("Computer Wins!")
   elif player_choice > 3:
-    print("You typed an invalid number. Play again.")
+    print("You typed an invalid number. Play again!")
+
