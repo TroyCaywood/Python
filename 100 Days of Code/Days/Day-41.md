@@ -36,7 +36,8 @@
 
 ### HTML Boilerplate
 
-- Every HTML document you create will have this code
+- In programming a boilerplate is similar to having a template. Something that you reuse for many projects.
+- Most HTML documents you create will have this code
 ```html
 <!DOCTYPE html>
 <html lang="en">
