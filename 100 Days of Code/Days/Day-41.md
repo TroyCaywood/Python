@@ -73,3 +73,8 @@
 - The `<p>` tag creates a new paragraph on a new line and groups all the text inside into a new paragraph.
 - The `<em>` emphasis tag makes text italic or "emphasized"
 - The `<strong>` tag makes text bold or "strong"
+- You can create unordered lists by using `<ul>` with list items `<li>` inside the opening and closing tag
+- You can create ordered lists by using `<ol>` instead of `<ul>`
+- An image is created using the self-closing tag `<img src="https://www.website.com/image.jpg" alt="image description">`
+- A link is created using `<a href="https://www.google.com>Link Text</a>`
+- 
