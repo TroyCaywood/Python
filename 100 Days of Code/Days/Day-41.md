@@ -50,3 +50,26 @@
 </body>
 </html>
 ```
+- The `<!DOCTYPE html>` line tells the browser what version of HTML is being used (in this case HTML 5)
+- The `<html>` tags tells the browser that everything in between those tags is HTML code
+- Inside the `<html>` tags there is a `<head>` tag. This portion holds information about the webpage and tells the browser how it should handle the page. The `<meta>` tag gives extra metadata to the browser.
+- The `<body>` section is where the actual displayable portion of the HTML code is stored.
+
+### Structuring Text in HTML
+- When writing HTML code, it's best to keep things indented correctly to make it easier to read. Indent lines to show what tags are contained within other tags
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Troy's Personal Site</title>
+    </head>
+    <body>
+        <h1>Troy Caywood</h1>
+    </body>
+</html>
+```
+
+- The `<p>` tag creates a new paragraph on a new line and groups all the text inside into a new paragraph.
+- The `<em>` emphasis tag makes text italic or "emphasized"
+- The `<strong>` tag makes text bold or "strong"
