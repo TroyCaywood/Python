@@ -77,4 +77,5 @@
 - You can create ordered lists by using `<ol>` instead of `<ul>`
 - An image is created using the self-closing tag `<img src="https://www.website.com/image.jpg" alt="image description">`
 - A link is created using `<a href="https://www.google.com>Link Text</a>`
-- 
+
+## Day 41 - [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-41) - Personal Website - This was walked through on the videos today
