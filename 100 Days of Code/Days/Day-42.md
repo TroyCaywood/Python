@@ -60,3 +60,5 @@
 <textarea name="" id="" cols="30" rows="10"></textarea>
 ```
 - You can also change the function of the submit button by changing the `action` type attribute of the form tag. For example `mailto:someemail@email.com' would open the default mail program on the user's computer and add the contents of the form
+
+## Day 42 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-42) - Personal Website update - This was walked through in the videos.
