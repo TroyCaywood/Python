@@ -53,3 +53,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Forty](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-40.md) - Capstone Part 2: Flight Club
 - [Day Forty One](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-41.md) - Introduction to HTML
 - [Day Forty Two](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-42.md) - Intermediate HTML
+- [Day Forty Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-43.md) - Introduction to CSS
