@@ -104,3 +104,5 @@ img:hover {
 }
 ```
 - The previous example would cause any image to change it's background color to gold as soon as a user hovers their mouse cursor over it.
+
+## Day 42 - [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-43) - Personal Site CSS - This was walked through in the videos today.
