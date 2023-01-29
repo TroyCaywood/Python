@@ -40,4 +40,47 @@ div {
 
 ![image](https://user-images.githubusercontent.com/52113778/215216585-b16077ed-80a3-4826-9c3f-bf1a3c701670.png)
 
--
+## CSS Display Property
+
+- The display property in CSS has four different values:
+  + Block - Elements take up the whole width of the screen "blocking" out any other elements from sitting next to it on the left or the right. Width can be changed.
+    + Common block elements (default to block):
+      + Paragraphs `<p>`
+      + Headers `<h1>` through `<h6>`
+      + Divisions `<div>`
+      + Lists and list items `<ol>` `<ul>` and `<li>`
+      + Forms `<form>`
+  + Inline - Only takes up as much space as it needs to display that element. Width cannot be changed.
+    + Common inline elements (default to inline):
+      + Spans `<span>` (a lot like div, doesn't really do anything until you set some properties in CSS)
+      + Images `<img>`
+      + Anchors `<a>`
+  + Inline-Block - Elements can be on the same line and width is adjustable
+  + None - Setting a display property to none removes that element from the page. This will reposition the other elements on the page as if that element isn't there anymore.  Using `visibility: hidden;` instead simply hides the element, but all the other elements will still behave as if that element is still there, but invisible.
+
+- By default some elements are block display such as `<h1>` elements
+
+## CSS Static and Relative Positioning
+
+- Rules for positioning:
+  1. Content is everything: The size of your content determines the width and height of an element depending on the display property. For example, a block element takes up the full width of the page, but the height of the element is determined by the height of the content in that block.
+  2. Order comes from code: The order that your code is written in determines the order in which the content is displayed on your page.
+  3. Children sit on top of parents: Elements that are nested within other elements are layered on top of the parent element. In the following example, the `<p>` element would be sitting on top of the `<div>` element.
+```html
+    <div>
+        <p>I like cats.</p>
+    </div>
+```
+  
+- Elements also have a position property 
+  + Static: All HTML elements are static in their position by default. This just means they go along with the default rules.
+  + Relative: Setting an element position property to relative allows you to adjust it's position relative to where it would have been if the position was static. For example, the following CSS would move an img element 20px to the right by adding 20px of space to the left of the element. You can also to the same with top, right, and bottom. When moving an element position, it does not affect the position of anything else on the screen, only that element. If an element moves to the space where another element is, it will display on top or below of that element. Really means you're adding a margin to the side that you move. Elements will flow around that margin area.
+```html
+img {
+    position: relative;
+    left: 20px;
+}
+```
++   
+
+
