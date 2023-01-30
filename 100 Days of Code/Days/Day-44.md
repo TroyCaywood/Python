@@ -81,6 +81,21 @@ img {
     left: 20px;
 }
 ```
-+   
 
+## Absolute Positioning
 
+- Rather than using relative positioning on elements you can also set `position` to absolute. When using absolute positioning on an element you are adding a margin relative to it's parent element rather than relative to where the element would have been like with relative positioning.
+- Absolute positioning will affect other elements on the page unlike relative positioning.
+
+## Fixed Positioning
+
+- Using `position: fixed;` causes that element to stay fixed in it's position no matter whether the page is scrolling or not. This is useful for things like a nav bar that you want to keep at the top of the screen.
+
+## Centering
+
+- `text-align: center;` will center everything inside of that element that doesn't have a width set
+- If an element does have a width set, you'll have to center it using `margin: 0 auto;` or `margin: auto 0;` (depending on if you want to center horizontally or vertically)
+
+# Font Styling
+
+- The font family can be set using 
