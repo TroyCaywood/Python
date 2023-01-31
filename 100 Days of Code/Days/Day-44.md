@@ -96,8 +96,20 @@ img {
 - `text-align: center;` will center everything inside of that element that doesn't have a width set
 - If an element does have a width set, you'll have to center it using `margin: 0 auto;` or `margin: auto 0;` (depending on if you want to center horizontally or vertically)
 
-# Font Styling
+## Font Styling
 
 - The font family can be set using `font-family: Verdana, sans-serif` (verdana and sans-serif are just examples). [Web safe fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
 - You can also have fallback fonts by [listing](https://www.cssfontstack.com) multiple fonts in `font-family`
+
+## Font Sizing
+
+- Font sizing can be adjusted using `font-size: 90px;` (or dynamically using percentages. 100% = 16px in font size, or em. 1 em = 16px)
+- When using em or percentages, the size is added to its parent. For example, if you had an `<h1>` nested in the `<body>` and the body was set to `font-size: 100%` and the `<h1>` was set to `font-size: 50%` the total size for `<h1>` would be `150%`
+- Rather than using `em`, you can use `rem`, which ignores the parent containers sizing. This is the most reliable and less error-prone way to do sizing.
+
+## Float and Clear
+
+- Using the `float` property on your elements causes the other elements to wrap around that element. You could use `float: right;` on an image for example if you wanted your text in that block to wrap around it to the right.
+- You can use `clear: left;` (or right etc) on an element to clear the float so that part of the code block will not follow your previous float setting.
+- It's recommended to only use `float` for wrapping text around images and not for positioning.
 - 

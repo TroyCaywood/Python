@@ -22,21 +22,36 @@ body {
     padding-top: 100px;
 }
 
+a {
+    color: #11999E;
+}
+
+hr {
+    border-style: dotted;
+    scale: 6;
+    color: #EAF6F6;
+}
+
 h1 {
-    margin-top: 0px;
+    margin: 50px auto 0 auto;
+    color: #66BFBF;
+    font-size: 5.6rem;
     font-family: 'Sacramento', cursive;
 }
 
 h2 {
+    color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
 }
 
 h3 {
+    color: #11999E;
     font-family: 'Montserrat', sans-serif;
 }
 
 .middle-container {
-
 
 
 }
@@ -46,6 +61,28 @@ h3 {
 
 }
 
-img {
+.profile-img {
     border-radius: 50%;
+
 }
+
+.retro-pc {
+    border-radius: 0;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.programming-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
