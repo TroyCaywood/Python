@@ -99,4 +99,5 @@ img {
 # Font Styling
 
 - The font family can be set using `font-family: Verdana, sans-serif` (verdana and sans-serif are just examples). [Web safe fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+- You can also have fallback fonts by [listing](https://www.cssfontstack.com) multiple fonts in `font-family`
 - 
