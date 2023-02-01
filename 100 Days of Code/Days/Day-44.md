@@ -112,4 +112,5 @@ img {
 - Using the `float` property on your elements causes the other elements to wrap around that element. You could use `float: right;` on an image for example if you wanted your text in that block to wrap around it to the right.
 - You can use `clear: left;` (or right etc) on an element to clear the float so that part of the code block will not follow your previous float setting.
 - It's recommended to only use `float` for wrapping text around images and not for positioning.
-- 
+
+## Day 44 [Code Challenge](https://github.com/TroyCaywood/Python/tree/main/100%20Days%20of%20Code/CodeChallenges/Day-44) - Personal Website final CSS
