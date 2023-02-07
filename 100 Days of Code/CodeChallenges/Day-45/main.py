@@ -1,32 +1,19 @@
+import requests
 from bs4 import BeautifulSoup
 
-# Open HTML file and read it
-with open(file="website.html") as data:
-    contents = data.read()
+URL = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/"
 
-# Create BeautifulSoup object and pass it the contents variable and tell it to use the html parser to read it
-soup = BeautifulSoup(contents, "html.parser")
+# Write your code below this line 👇
 
-# Print title tag from website
-# print(soup.title)
+response = requests.get(URL)
 
-# Print title tag name
-# print(soup.title.name)
+webpage = response.text
+soup = BeautifulSoup(webpage, "html.parser")
 
-# Print title string
-# print(soup.title.string)
+movie_tag = soup.find_all(name="h3", class_="title")
+movies = [movie.getText() for movie in soup.find_all(name="h3", class_="title")]
+print(movies)
 
-# Print the entire html
-# print(soup)
-
-# Print the entire html with formatting
-# print(soup.prettify())
-
-# Print text and links from all a tags
-all_anchor_tags = soup.find_all(name="a")
-
-for tag in all_anchor_tags:
-    print(tag.getText())
-    print(tag.get("href"))
-
-heading = soup.find(name="h1", id="name")
+with open(file="movies.txt", mode="w") as data:
+    for movie in movies:
+        data.writelines(f"{movie}\n")
