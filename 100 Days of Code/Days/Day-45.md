@@ -91,7 +91,7 @@ print(f"{largest_number} votes")
 ```
 ### Is web scraping legal?
 
-- You are allowed to scrap a website's data as long as you are scraping data that is publicly available and not copyrighted.
+- You are allowed to scrape a website's data as long as you are scraping data that is publicly available and not copyrighted.
 - If you're using data privately it doesn't really matter too much, but if you're selling the data you're scraping it's different.
 - You cannot scrape data that is behind authentication.
 - If data is not behind authentication and isn't copyrighted you should be ok to scrape.
