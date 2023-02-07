@@ -56,3 +56,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Forty Three](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-43.md) - Introduction to CSS
 - [Day Forty Four](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-44.md) - Intermediate CSS
 - [Day Forty Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-45.md) - Web Scraping with Beautiful Soup
+- [Day Forty Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-46.md) - Create a Spotify Playlist using the Musical Time Machine
