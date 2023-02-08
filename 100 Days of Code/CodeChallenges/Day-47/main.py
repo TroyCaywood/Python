@@ -6,7 +6,7 @@ import os
 
 
 EMAIL = os.getenv(EMAIL)
-EMAIL_PW= os.getenv(EMAIL_PW)
+EMAIL_PW = os.getenv(EMAIL_PW)
 PURCHASE_PRICE = 170
 
 
