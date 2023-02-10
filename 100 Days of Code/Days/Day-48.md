@@ -21,3 +21,40 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 - If you cannot locate an element by CSS, or ID or name etc. [Xpath](https://www.w3schools.com/xml/xpath_intro.asp) is another option for finding it.
 - You can obtain the Xpath of an element by going into the source with inspect and then find the element you're looking for, then right click and copy as xpath
 - `driver.find_element(By.XPATH, '//*[@id=site-map"]/div[2]/div/ul/li[3/a')` is an example of an XPATH
+- To get all elements with the same id/class/name etc you cna use `driver.find_elements()` instead.
+- To keep your browser from closing when the code finishes running add this
+```python
+from selenium.webdriver.chrome.options import Options
+
+
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
+
+driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
+```
+- To tell selenium to click on an element, first select the element and then use `element.click()`
+```python
+driver.get("https://en.wikipedia.org")
+
+counter = driver.find_element(By.CSS_SELECTOR, "#articlecount a")
+counter.click()
+```
+
+- An easy way to find a link on a page is by using `By.LINK_TEXT` and then you just add the text of the link.
+```python
+community_portal = driver.find_element(By.LINK_TEXT, "Community portal")
+community_portal.click()
+```
+- To type in a field, first find the element for that field and then use `sendkeys("text")` to enter text into that field.
+```python
+search = driver.find_element(By.NAME, "search")
+search.send_keys("Python")
+```
+- If you need to send a key such as return or backspace etc you'll need to import the `Keys` class first.
+```python
+from selenium.webdriver.common.keys import Keys
+
+search = driver.find_element(By.NAME, "search")
+search.send_keys("Python")
+search.send_keys(Keys.ENTER)
+```
