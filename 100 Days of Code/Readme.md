@@ -58,3 +58,4 @@ The purpose of this repository is to keep myself motivated by providing a place 
 - [Day Forty Five](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-45.md) - Web Scraping with Beautiful Soup
 - [Day Forty Six](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-46.md) - Create a Spotify Playlist using the Musical Time Machine
 - [Day Forty Seven](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-47.md) - Create an Automated Amazon Price Tracker
+- [Day Forty Eight](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/Days/Day-48.md) - Selenium Webdriver Browser and Game Playing Bot
