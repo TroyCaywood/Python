@@ -58,3 +58,5 @@ search = driver.find_element(By.NAME, "search")
 search.send_keys("Python")
 search.send_keys(Keys.ENTER)
 ```
+
+## Day 48 [Code Challenge](https://github.com/TroyCaywood/Python/blob/main/100%20Days%20of%20Code/CodeChallenges/Day-48/cookie_click.py) - Cookie Clicker Bot
